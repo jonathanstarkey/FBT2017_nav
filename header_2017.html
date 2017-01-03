@@ -52,16 +52,20 @@
 <!-- Wrap all page content here -->
 <div id="wrap">
      
-<!-- Fly-in navbar -->
-<div class="container-fluid" style="height: 35px; background:white;">
-            <div class="navbar-header pull-left">
-            </div>
-            <div class="navbar-header pull-right">
-               
-            </div>
+<!-- Navbar -->
+<div class="container-fluid nav-r1-container">
+    <div class="row">
+        <div class="navbar-header nav-r1-left">
         </div>
-<div class="navbar navbar-inverse" >
-    <div class="container">
+        <div class="navbar-header ">
+            
+               
+        </div>
+    </div>
+</div>
+<div class="navbar navbar-inverse nav-r2-container" >
+    <div class="container-fluid" >
+       
       <div class="navbar-header">
         
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -69,66 +73,48 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-<!--          <a class="navbar-brand nav-logo-lg" href="/index.cfm">-->
+          <a class="navbar-brand nav-logo-lg" href="/index.cfm">
         </a>
       </div>
-      <div class="collapse  navbar-collapse" >
-        <ul class="nav navbar-nav navbarskinny navbar-right">
-          <li><a href="/index.cfm">Home</a></li>
-          <li class="dropdown nav-hover"><a href="section1" class="header-dropdown  dropdown-toggle" data-toggle="dropdown">Product Catalog <span class="caret"></span></a>
-              <ul class="header-dropdown-menu dropdown-menu dropdown-menu-right">
-                
-                    <li><a href="../product_catalog/toys.cfm">Toys</a></li>
-                    <li><a href="../product_catalog/games.cfm">Games</a></li>
-                    <li><a href="../product_catalog/brain_teasers.cfm">Brain Teasers</a></li> 
-                    <li><a href="../product_catalog/education.cfm">Education</a></li>
-                </ul>
-            </li>
-          <li><a href="../purchase.cfm">Purchase</a></li>
-          <li class="dropdown"><a href="section1" class="header-dropdown  dropdown-toggle" data-toggle="dropdown">Media <span class="caret"></span></a>
-             <ul class="header-dropdown-menu dropdown-menu dropdown-menu-left">
-                
-                    <li><a href="/media/in_the_press.cfm">In the Press</a></li>
-                    <li><a href="/media/awards.cfm">Awards</a></li>
-                    <li><a href="/media/product_images.cfm">Product Images</a></li> 
-                  </ul>  
-               
-            </li>
-          <li><a href="../about_us.cfm">About Us</a></li>
-            <li><a href="../contact.cfm">Contact</a></li>
-            <li>
-            	
-            	
-					<button type="button" class="btn class account-btn btn-danger" data-toggle="modal" data-target="#account-login">
-     			 	Account Login</button>
-            </li>
-            <li><a href="#section"><span class="glyphicon glyphicon-earphone"></span> 800.335.5621</a></li>
+      <div class="collapse navbar-collapse" >
+          
+        <ul class="nav navbar-nav navbar-right nav-r2-right">
+            <li > 
+                <div >
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control search-width search-height" placeholder="Search" name="q">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default search-height" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+                </div>
+        
+ </li>
+          <li><a href="/index.cfm">About Us</a></li>
+         
+         <li class="nav-r2-divider" style=""></li>
+          
+          <li><a href="../about_us.cfm" class="giftbot">Giftbot<span></span></a></li>
+            <li class="nav-r2-divider" style=""></li>
+            <li><a href="#section" class="invented-here">Invented Here<span></span></a></li>
         </ul>
           
       </div><!--/.nav-collapse -->
         
     </div><!--/.container -->
-    <div class="container-fluid" style="height:15px; background:grey;"></div>
-        <div class="container-fluid" style="background:white;">
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbarskinny navbar-justify">
-                    <li><a href="#">it1d</a></li>
-                    <li class="divider-vertical"></li>
-                    <li><a href="#about">it2d</a></li>
-                    <li class="divider-vertical"></li>
-                    <li><a href="#contact">it3d</a></li>
-                    <li class="divider-vertical"></li>
-                    <li><a href="#contact">it4d</a></li>
-                    <li class="divider-vertical"></li>
-                    <li><a href="#contact">it5d</a></li>
-                    <li class="divider-vertical"></li>
-                    <li><a href="#contact">it6d</a></li>
-                    <li class="divider-vertical"></li>
-                    <li><a href="#contact">it7d</a></li>
-
+    <div class="container-fluid nav-r2-divider nav-r3-container"></div>
+            <div class="collapse navbar-collapse ">
+                <ul class="nav nav-justified nav-r3">
+                    <li><a href="#">Shop by Age</a></li>
+                    <li><a href="#about">Best New Releases</a></li>
+                    <li><a href="#contact">Categories</a></li>
+                    <li><a href="#contact">Interests</a></li>
+                    <li><a href="#contact">American Made</a></li>
+                    <li><a href="#contact">Name Store</a></li>
                 </ul>
             </div>
-        </div>
     </div>
 </div><!--/.navbar -->
  
