@@ -70,8 +70,9 @@ section {
     
 }
 
-.nav-r1-left{
-    background: grey
+.nav-r1-wrap,
+.nav-r1-wrap>div{
+    padding: 0px;
 }
 
 /*---------- /NAV BAR ROW 1 ----------*/
@@ -124,7 +125,7 @@ section {
     border-radius: 0px;
 }
 
-.nav-r2-divider {
+.nav-r2-listdivider {
     border-right: 1px solid #b9bbbd;
 }
 
@@ -142,7 +143,7 @@ section {
 /*    margin-top: 8px;*/
     
     background: url(images/robot_1.png) no-repeat center;
-    background-position: 46% 24%;
+    background-position: 46% 27%;
     width: 78px;
     height: 78px;
     
@@ -152,7 +153,7 @@ section {
 .giftbot span:hover{
 /*    position: absolute;*/
     background: url(images/robot_2.png) no-repeat center;
-        background-position: 46% 24%;
+        background-position: 46% 27%;
 
     width: 78px;
     height: 78px;
@@ -225,9 +226,11 @@ vertical-align: middle;
     
 }
 
+/*
 .navbar-nav {
     margin: 1px 1px;
 }
+*/
 
 .navbar-toggle {
     outline: 0;
@@ -510,196 +513,31 @@ vertical-align: middle;
 /*** 1999 and below ***/
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .info-btn {
-    margin-bottom: 5px;
-    }
-    
-    /*  SPECS BACKGROUND-COLOR  */
-    
-    .specs-background-color {
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+50,f4f7f9+50 */
-    background: #ffffff; /* Old browsers */
-    background: -moz-linear-gradient(left,  #ffffff 50%, #f4f7f9 50%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  #ffffff 50%,#f4f7f9 50%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  #ffffff 50%,#f4f7f9 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f7f9',GradientType=1 ); /* IE6-9 */
 
-    }
     
 }
 
 @media only screen and (max-width: 1440px) {
-     .overlay {
-        position: absolute;
-        z-index: 12;
-        bottom: 10%;
-        left: 10%;
-        width: 90%;
 
-        text-align: left;
-        color: #fff;
-    }
-
-    .overlay h1{
-        font-size: 6em!important;
-        font-weight:800;
-        line-height: 1em;
-
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
-    }
     
 }
 
 @media only screen and (max-width: 1199px) {
-    .secondary-header-title-2 {
-   
-    margin-top: 190px;
-/*
-    right: 10%;
-    
-*/
-    font-size: 4em!important;
-   
-/*    line-height: 1.2em;*/
-
-}
-    
-    
-    
-    .list-inline>li {
-    display: block;
-    padding-right: 0;
-    padding-left: 0;
-    }
-    
-    .request-catalog-div {
-    margin-top: 125px;
-    }
-    
-    .request-catalog-div-right {
-    margin-top: 20px;
-    }
-    
-   
 
 }
 
 @media only screen and (max-width: 500px) {
     
 
-/*   TRADE SHOW CONTENT  */
-    .tradeshow-content-header {
-        font-size: 3.75em;
-    /*   TRADE SHOW CONTENT  */
 }
 
 @media only screen and (max-width: 768px) {
-    
-     
-    
-     .affix {
-         position: fixed;
-    right: -20;
-    }
-
 
      .navbar-nav.nav-justified > li {
         float: none;
     }
-    
-        .overlay {
-        position: absolute;
-        z-index: 12;
-        bottom: 10%;
-        left: 10%;
-        width: 90%;
 
-        text-align: left;
-        color: #fff;
-    }
-
-    .overlay h1{
-        font-size: 4em!important;
-        font-weight:800;
-        line-height: 1.2em;
-
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
-    }
-    
-    .product-catalog-parallax-header {
-        margin-top: 20px;
-    }
-    
-    .four-way-btn-1 {
-         min-width:100%;
-    }
-    
-    .wholsale-contact {
- 
-    padding-left: 50px;
-    
 }
-  
-    
-    
-     /*  PARALLAX SECTION BUTTON   */
-    
-    .toy-design-btn-header,
-    .request-catalog-btn-header {
-
-        padding-left: 0;
-        padding-right: 0;
-
-        font-family: 'Roboto', Arial, "Helvetica Neue", Helvetica, sans-serif;
-/*        font-size: 2em;*/
-        font-weight: 700;
-    }
-    
-     /*  /PARALLAX SECTION BUTTON    */
-    
-    /*  SPLIT RULE   */
-    
-    .split-rule {
-        display:block;
-    }
-    
-     
-    /*  SPLIT RULE   */
-    
-    
-    /*  PRODUCT SPECS   */
-    
-        .table-responsive {
-            border: none;
-            
-    }
-
-
-    .borderless thead tr th {
-         margin-bottom: 5px;
-
-        font-size: 2em;
-        font-family: 'Exo 2', sans-serif;
-        font-weight: 600;
-
-        color: #6d6e71;
-    }
-
-    .borderless tbody tr td {
-        padding-top: 10px;
-        padding-bottom: 0px;
-
-        border: none;
-
-        font-size: 1em;
-    }
-    /*  /PRODUCT SPECS   */
-    
-}
-    
-   
-}
-
 
 
 @media (max-width: 991px) {
@@ -712,55 +550,10 @@ vertical-align: middle;
     background-size: 75%;
     }
 */
-    
-    .contact-info {
-        margin-left: 0px;
-        margin-top: 100px;
-        
-    }
-    
-     /*  SPECS BACKGROUND-COLOR  */
-    
-    .specs-background-color {
-       
-    background: #ffffff;
 
-    }
-    
-    .specs-wrapper{
-    background-color: #f4f7f9;
-    }
-    
-    /*   TRADE SHOW CONTENT  */
-    .tradeshow-content-header {
-    padding-left: 0;
-        }
-    
-     .tradeshow-content-spacer {
-    margin-left:0;
-}
-    .tradeshow-content-spacer ul {
-    padding-left:0;
+       
 }
     
-    .tradeshow-content-wrapper{
-    border-left:0;
-    }
-    
-    .split-rule-white {
-        display:block;
-    }
-    
-    .dev-concept-right {
-    border-top: 2px solid #b2b2b2;
-    border-left: none;
-}
-    
-    
-}
-    
-    
-     /*  /SPECS BACKGROUND-COLOR  */
 
  @media screen and (min-width: 1199px) {
      
@@ -768,6 +561,7 @@ vertical-align: middle;
      .navbar-nav>li:active,
      .navbar-nav>li:focus {
          background-color: #eeeeee;
+/*        border: 1px solid #eeeeee;*/
      }
         
     .dropdown:hover .dropdown-menu {
@@ -778,13 +572,7 @@ vertical-align: middle;
 
 
 @media (min-width: 891px){
-.short-text {
-    height: 400px;
-}
-    
-.full-text{
-    height: auto;
-}
+
 }
 
 @media (max-width: 768px) { 
@@ -793,13 +581,6 @@ vertical-align: middle;
             font-weight: normal;
          color: #ffffff;
         }
-
-    .split-container-orange,
-    .split-container-red,
-    .split-container-blue, 
-    .split-container-yellow {
-       background: #ffffff;
-    }
     
     .search-width {
         width: 100%!important;
@@ -808,133 +589,6 @@ vertical-align: middle;
     .nav-justified > li > a { 
         text-align: left;
     }
-
-    .toys-header {
-        color: #f24c22;
-    }
-    
-    .toys-btn {
-     border: 2px solid #f24c22;
-    
-    background-color:transparent;
-    
-    font-family: Georgia, Times, "Times New Roman", serif;
-
-    color: #f24c22;
-    }
-    
-    .toys-btn:hover,
-    .toys-btn:focus,
-    .toys-btn:active {
-    background-color: #f24c22;
-    outline: 0;
-    color: #ffffff;
-    }
-    
-    .games-header {
-        color: #ee3647;
-    }
-    
-    .games-btn {
-     border: 2px solid #ee3647;
-    
-    background-color:transparent;
-    
-    font-family: Georgia, Times, "Times New Roman", serif;
-
-    color: #ee3647;
-    }
-    
-    .games-btn:hover,
-    .games-btn:focus,
-    .games-btn:active {
-    background-color: #ee3647;
-    outline: 0;
-    color: #ffffff;
-    }
-    
-.brain-teasers-header {
-        color: #0199a7;
-    }
-    
-    .brain-teasers-btn {
-     border: 2px solid #0199a7;
-    
-    background-color:transparent;
-    
-    font-family: Georgia, Times, "Times New Roman", serif;
-
-    color: #0199a7;
-    }
-    
-    .brain-teasers-btn:hover,
-    .brain-teasers-btn:focus,
-    .brain-teasers-btn:active {
-    background-color: #0199a7;
-    outline: 0;
-    color: #ffffff;
-    }
-    
-    .education-header {
-        color: #ffcb09;
-    }
-    
-    .education-btn {
-     border: 2px solid #ffcb09;
-    
-    background-color:transparent;
-    
-    font-family: Georgia, Times, "Times New Roman", serif;
-
-    color: #ffcb09;
-    }
-    
-    .education-btn:hover,
-    .education-btn:focus,
-    .education-btn:active {
-    background-color: #ffcb09;
-    outline: 0;
-    color: #ffffff;
-    }
-
-
-    .split-section-p {
-        color: #58595b;
-    }
-
-}
-
-@media (max-width: 768px) and (orientation: landscape) { 
-
-        .overlay {
-        position: absolute;
-        z-index: 12;
-        bottom: 10%;
-        left: 10%;
-        width: 90%;
-
-        text-align: left;
-        color: #fff;
-    }
-
-    .overlay h1{
-        font-size: 3em!important;
-        font-weight:800;
-        line-height: 1.2em;
-
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
-    }
-    
-/*
-    .nav-logo-lg {
-        margin-left: 10px;
-    height: 90px;
-    width: 122px;
-    background-size: 100%;
-    }
-*/
-}
-
 }
 
 @media (max-width: 768px) { 
@@ -942,62 +596,34 @@ vertical-align: middle;
             padding: 10px 20px!important;
             font-weight: normal!important;
          color: #ffffff!important;
-        }
-    
-    
+        } 
 }
+
+@media (min-width: 768px){
+    .nav-r3 {
+        margin: 0 auto;
+        display: table;
+        table-layout: auto;
+        float: none;
+        width: 100%;
+    }
+    
+    .nav-r3>li>a {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .nav-r3>li {
+        display: table-cell;
+        float: none;
+        text-align: center;
+    }
+} 
 
 @media (max-width: 767px){
-.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
     padding: 15px 20px;
     color: #ffffff;}
-    
-    .caption {
-     
-    bottom: 10px; 
-    
-}
-    
-   
-    .secondary-header-title-2,
-    .secondary-header-title-3 {
-    margin-top: 150px;
-    line-height: 1em;
-
-}
-    .secondary-header-title {
-        font-size: 5em!important;
-    }
-    
-    .meet-fbtc-video-img {
-        padding-top:50px;
-    }
-    
-    .request-catalog-btn-header {
-        font-size: 1.5em;
-    }
-    
-    .toy-design-btn-header {
-        font-size: 1.75em;    
-    }
-    
-    .toy-design-btn-p  {
-        font-size: 1.25em;
-    }
-    
-    .about-us-heading {
-   font-size: 4em;
-    
-}
-    
-    .downloadable-content-header {
-        font-size: 3.5em;
-    }
-    
-    .table-responsive {
-        border: none;
-    }
-
 
 }
 
@@ -1062,7 +688,7 @@ vertical-align: middle;
     }
     
 }
-}
+
 
 /*---------- /MEDIA QUERIES ----------*/
 
