@@ -53,11 +53,20 @@ section {
 /*---------- NAV GENERAL ----------*/
 
 .nav-r1-container,
+.nav-r1-r2-container,
 .nav-r2-container,
 .nav-r3-container,
 .navbar-collapse {
     padding-right: 0px;
     padding-left: 0px;
+}
+
+.navbar-right{
+    margin-right: 0px;
+}
+
+.navbar {
+    margin-bottom: 0px;
 }
 
 /*---------- /NAV GENERAL ----------*/
@@ -74,6 +83,154 @@ section {
 .nav-r1-wrap>div{
     padding: 0px;
 }
+
+.nav-r1-left-ship img {
+    padding-right: 10px;
+    
+    margin-bottom: 5px;
+}
+
+.nav-r1-left-ship{
+    padding-left:114px!important;
+/*    padding-right: 40px!important;*/
+    
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    
+    color: #404041;
+}
+
+.nav-r1-left-ship-bold {
+    
+    font-weight: 600;
+    
+    color: #f6333c;
+}
+
+.nav-r1-left-ship-bold:hover {
+    
+    text-decoration: underline;
+}
+
+
+.nav-r1-right li {
+    height:35px;
+}
+
+.nav-r1-right li a{
+    height:35px;
+    
+    padding-top: 8px;
+    padding-bottom: 8px;
+    
+    text-transform: uppercase;
+}
+
+.nav-r1-right a:hover,
+     .nav-r1-right a:active,
+     .nav-r1-right a:focus { 
+        
+         background-color: #f4f7f9!important;
+          color: black;
+         
+         text-decoration: underline!important;
+     }
+
+
+.nav-r1-right-label {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1em;
+    font-weight:700;
+}
+
+.nav-r1-right-label img {
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    margin-bottom: 5px;
+}
+
+.nav-r1-right-label-a{
+    padding-left:40px!important;
+    padding-right: 40px!important;
+    
+    color: #404041;
+}
+
+.nav-r1-right-label-b{
+    padding-left:23px!important;
+    padding-right: 23px!important;
+    
+    color: #f6333c;
+    text-decoration: underline;
+}
+
+.nav-r1-right-number{
+    padding-left:40px!important;
+    padding-right: 40px!important;
+    
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.6em;
+    font-weight: 800;
+    
+    color: #404041;
+}
+
+.nav-r1-right-cart-link:hover,
+.nav-r1-right-cart:hover {
+    text-decoration: underline!important;
+}
+
+.nav-r1-right-cart-glyph {
+    padding: 9px 11px;
+    
+    font-size: 1.1em;
+    
+    color:#ffffff;    
+}
+
+.nav-r1-right-cart{
+    padding: 9px 9px;
+    
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.1em;
+    font-weight:500;
+    
+    color:#ffffff;
+    
+    text-transform: uppercase;
+}
+
+.cart-wrap {
+    width: 170px;
+    height: 35px;
+    
+    background:#404041;
+}
+
+.cart-container {
+     width: 40px; 
+    height: 35px; 
+    
+    background:#f6333c;
+}
+
+.cart-qty{
+    padding: 9px 9px;
+    
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.1em;
+    font-weight:500;
+    
+    line-height: 35px;
+    
+    color:#ffffff;
+    
+    text-transform: uppercase;
+}
+
+
 
 /*---------- /NAV BAR ROW 1 ----------*/
 
@@ -113,10 +270,6 @@ section {
     text-transform: uppercase;
 }
 
-.nav-r3-divider-lg {
-    border-top: 9px solid #5ad9ff; 
-}
-
 .nav-r2-divider-sm {
     border-bottom: none; 
 }
@@ -131,6 +284,17 @@ section {
 
 .search-width{
     width: 1%!important;
+}
+
+.search-bar-button {
+    padding: 6px 9px;
+    font-size: 24px;
+}
+
+.search-bar-button,
+.search-bar-field {
+    color: #b9bbbd;
+    border: 2px solid  #b9bbbd;
 }
 
 .search-height {
@@ -216,8 +380,17 @@ vertical-align: middle;
 
 /*---------- NAV BAR ROW 3 ----------*/
 
-.nav-r3 {
+.nav-r3-collapse {
     background-color: #ffffff;
+}
+
+.nav-r3-collapse ul {
+    padding-right: 12%;
+    padding-left: 12%;
+}
+
+.nav-r3-divider-lg {
+    border-top: 9px solid #5ad9ff!important; 
 }
 
 .nav-r3 li a{
@@ -230,6 +403,12 @@ vertical-align: middle;
     
     text-transform: uppercase;
 }
+
+ .nav-r3>li:hover,
+     .nav-r3>li:active,
+     .nav-r3>li:focus { 
+         background-color: #eeeeee;
+     }
 
 /*---------- NAV BAR ROW 3 ----------*/
 
@@ -415,6 +594,67 @@ vertical-align: middle;
 
 /*---------- /NAV BAR ----------*/
 
+ /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 580px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel-inner{
+    height: 580px;
+}
+
+.item {
+    display: none;
+    position: relative;
+    .transition(.6s ease-in-out left);
+}
+
+    .carousel .item {
+      height: 580px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 580px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
 
 /*---------- MODALS ---------*/
 /****** LOGIN MODAL ******/
@@ -575,7 +815,7 @@ vertical-align: middle;
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .reorder .row {
     display: flex;
     display: -ms-flex;
@@ -587,6 +827,7 @@ vertical-align: middle;
   .reorder .row .item2 {
     order: 1;
   }
+   
 }
 
 @media only screen and (max-width: 768px) {
@@ -629,13 +870,7 @@ vertical-align: middle;
 /*         text-decoration: underline;*/
 /*         background-color: #eeeeee;*/
      }
-     
-     .nav-r3>li:hover,
-     .nav-r3>li:active,
-     .nav-r3>li:focus { 
-         background-color: #eeeeee;
-     }
-     
+       
 
     .dropdown:hover .dropdown-menu {
     display: block;
@@ -795,7 +1030,22 @@ vertical-align: middle;
         font-size: 1em;
     }
 }
-    
+
+
+
+
+@media only screen and (max-width: 2000px) {
+    .nav-r3-collapse ul {
+        padding-right: 8%;
+        padding-left: 8%;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .nav-r3-collapse ul {
+        padding-right: 2%;
+        padding-left: 2%;
+    }
 }
 /*---------- /MEDIA QUERIES ----------*/
 
