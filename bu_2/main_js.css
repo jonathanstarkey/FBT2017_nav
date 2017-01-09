@@ -150,10 +150,6 @@ section {
     font-weight:700;
 }
 
-.collapse-sign-in {
-    display: none;
-}
-
 .nav-r1-right-label img {
     padding-left: 10px;
     padding-right: 10px;
@@ -217,10 +213,6 @@ section {
     height: 35px;
     
     background:#404041;
-}
-
-.collapse-cart-wrap {
-    display: none;
 }
 
 .cart-container {
@@ -464,10 +456,6 @@ vertical-align: middle;
     text-transform: uppercase;
 }
 
-.header-bottom-nav {
-    display: none;
-}
-
  .nav-r3>li:hover,
      .nav-r3>li:active,
      .nav-r3>li:focus { 
@@ -477,7 +465,7 @@ vertical-align: middle;
 /*---------- NAV BAR ROW 3 ----------*/
 
 .navbar-header {
-    height: 85px;
+    height: 72px;
 }
 .navbar-brand {
   padding: 2px;
@@ -498,30 +486,13 @@ vertical-align: middle;
 */
 
 .navbar-toggle {
-    margin-right: 0px;
-     padding: 8px 10px;
-    border-radius: 0px;
-    
-    outline: 0;  
+    outline: 0;
 }
 
 .navbar-toggle {
-/*    top: 10px;*/
-    height: 30px;
-    padding-top: 7px;
-    padding-bottom: 0px;
-   
+    top: 10px;
 }
 
-.icon-bar {
-    margin-bottom: 6px;
-    
-    width: 26px!important;
-    
-    background-color: #ffdb4a!important;
-}
-
-/*
 .navbar-toggle:before {
     content:"Menu";
     left:-50px;
@@ -530,18 +501,26 @@ vertical-align: middle;
     width:50px;
     color: #ffffff;
 }
-*/
 
 .navbar-inverse .navbar-toggle {
-    margin-top: 0px;
-    margin-bottom: 0px;
     /* padding-top: 10px; */
-    background-color: none;
-    
-    border: none;
+    background-color: #f24c22;
 }
 
+.navbar-inverse .navbar-toggle:hover {
+    /* padding-top: 10px; */
+    background-color: #d83c14;
+}
 
+.navbar-inverse .navbar-toggle:active {
+    /* padding-top: 10px; */
+    background-color: #d83c14;
+}
+
+.navbar-inverse .navbar-toggle:visited {
+    /* padding-top: 10px; */
+    background-color: #d83c14;
+}
 
 .nav-logo-lg {
     position: absolute;

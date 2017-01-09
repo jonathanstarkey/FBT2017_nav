@@ -238,6 +238,8 @@ vertical-align: middle;
 }
 
 .navbar-toggle:before {
+    display: none;
+    
     content:"Menu";
     left:-50px;
     top:4px;
