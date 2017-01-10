@@ -199,28 +199,32 @@
     }
 } 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
+    
+    .navbar-header {
+    height: 117px;
+}
     
     .nav-logo-lg {
         
         top: 5px;
     
         margin-left: 10px;
-    height: 30px;
-    width: 113px;
+    height: 42px;
+    width: 180px;
     background-size: 100%;
     }
     
     .collapse-sign-in {
         display: inline-block;
-        padding-right: 5px;
+        padding-right: 10px;
         
          font-family: 'Exo 2', sans-serif;
     font-size: 1em;
     font-weight:400;
         color: #ffffff;
         
-        line-height: 30px;
+        line-height: 40px;
         
         text-decoration: underline;
     }
@@ -230,14 +234,14 @@
     display: inherit;
     
     width: 80px;
-    height: 30px;
+    height: 40px;
     
     background:#404041;
 }
 
 .collapse-cart-container {
      width: 40px; 
-    height: 30px; 
+    height: 40px; 
     
     background:#f6333c;
 }
@@ -249,11 +253,17 @@
     font-size: 1.1em;
     font-weight:500;
     
-    line-height: 30px;
+    line-height: 40px;
     
     color:#ffffff;
     
     text-transform: uppercase;
+}
+
+    
+.nav-r1-right-cart-glyph {
+    padding: 0px 11px;
+    line-height: 40px;
 }
     
     ::-webkit-input-placeholder {
@@ -325,10 +335,10 @@
         margin-top: 0px;
         margin-bottom: 0px;
         
-        padding-top: 30px;
-        padding-bottom: 0px;
-        padding-left: 30px;
-        padding-right:30px;
+        padding-top: 44px;
+        padding-bottom: 3px;
+        margin-left: 0px;
+        margin-right: 0px;
         
         border: none;
         
@@ -336,13 +346,13 @@
 }
     
     .search-height {
-        height: 30px;
+        height: 40px;
     }
     
     .search-bar-button {
-    height: 30px;
-   padding-left: 5px!important;
-        padding-right:5px!important;
+    height: 40px;
+   padding-left: 10px!important;
+        padding-right:10px!important;
 /*        padding-top: 5px;*/
     background-color: #ffdb4a;
     font-size: 17px;
@@ -353,15 +363,16 @@
     }
     
     .header-bottom-nav {
-        margin-bottom: 0px;
+        margin-bottom: 0px; 
+        padding-left: 15px;
     }
     
 .header-bottom-nav li a{
-    padding-left: 15px;
+    padding-right: 10px;
     
     font-family: 'Exo 2', sans-serif;
-    font-size: .75em;
-    font-weight: 500;
+    font-size: .9em;
+    font-weight: 600;
     color: #ffffff!important;
     
     
@@ -433,9 +444,24 @@
 @media (max-width: 456px){
     
 
-@media (max-width: 440px){
+@media (max-width: 399px){
     
-   
+    
+    .nav-logo-lg {
+      
+    top: 5px;
+    left: 15px;
+    
+    margin-left: 0px!important;
+
+    height: 41px;
+    width: 88px;
+    
+    background: url("images/m_fbt_logo.png") no-repeat  center;
+    background-position: 30% 20%;
+    background-size: 100%;
+    }
+    
     
 }
 
