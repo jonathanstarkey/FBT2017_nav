@@ -20,8 +20,17 @@
 
 @media only screen and (max-width: 1525px) {
     
-    .nav-r1-left-ship{
-    padding-left:40px!important;
+.nav-logo-lg {
+   
+    top: -9px;
+    left: 15px;
+
+    height: 107px;
+    width: 400px;
+}
+    .search-bar{
+    position: absolute;
+    left: 433px;
 }
     
     .nav-r1-right-label-a{
@@ -37,21 +46,30 @@
 }
 
 @media only screen and (max-width: 1500px) {
-    .nav-r3-collapse ul {
-        padding-right: 2%;
-        padding-left: 2%;
-    }
-    
-    .nav-r1-left-ship{
-    padding-left:20px!important;
-        font-size:1em;
-}
-    
+
+        
     
 }
 
 @media only screen and (max-width: 1380px) {
     
+    .nav-r1-left-ship{
+    padding-left:25px!important;
+}
+    
+    .nav-logo-lg {
+    top: -7px;
+    width: 379px;
+}
+    
+    .search-bar{
+    position: absolute;
+    left: 414px;
+}
+     .nav-r3-collapse ul {
+        padding-right: 0%;
+        padding-left: 0%;
+    }
     
     .nav-r1-right-label-a{
     padding-left:10px!important;
@@ -86,7 +104,7 @@
 
 
 
-@media (max-width: 1199px) {
+@media (max-width: 1229px) {
     
     .search-bar{
     right: 400px;
@@ -106,9 +124,15 @@
     display: none;
 }
     
-    .nav-r1-left-ship{
-    padding-left:20px!important;
-        font-size:1em;
+     .nav-r1-left-ship{
+        font-size: 1em;
+    line-height: 1em;
+
+         
+}
+    
+    .nav-delivery li a {
+    padding-top: 10px!important;
 }
     
     .nav-r1-right-label-b{
@@ -128,11 +152,11 @@
     
 }
 
-@media only screen and (max-width: 1059px) {
+@media only screen and (max-width: 1078px) {
     .nav-logo-lg {
-        top: 1px;
+        top: -9px;
         margin-left: 10px;
-    width: 320px;
+    width: 367px;
     background-size: 100%;
     }
     
@@ -152,7 +176,7 @@
     
      .search-bar{
     right: 150px;
-    left: 340px;
+    left: 400px;
 }
 
     .nav-r2-right li a,
@@ -173,13 +197,57 @@
 
 @media (max-width: 991px){
     
-   
-    .nav-r1-left-ship {
-        font-size: 1.2em;
+    .nav-logo-lg {
+        top: -7px;
+        margin-left: 10px;
+    width: 352px;
+    background-size: 100%;
     }
+    
+    .nav-r1-right-cart{
+        display:none;
+    }
+    
+    .nav-delivery li a {
+    padding-top: 2px!important;
+}
+    
+    .cart-wrap {
+    width: 82px;
+}
+    
+     .search-bar{
+    right: 150px;
+    left: 385px;
+}
+    
+    
+}
+
+@media (max-width: 891px) {
+    
+    .nav-r3 li a {
+    font-size: .8em;
+}
+    
+    .nav-logo-lg {
+        top: -1px;
+    width: 319px;
+    }
+    
+    .search-bar{
+    left: 345px;
+}
+    
 }
 
 @media (min-width: 768px){
+/*
+    .nav-r1-right-label-a {
+        display: none;
+    }
+*/
+    
     .nav-r3 {
         margin: 0 auto;
         display: table;
@@ -201,18 +269,38 @@
 
 @media only screen and (max-width: 767px) {
     
+    .nav-r3 li a {
+    font-size: 1em;
+}
+    
+    .nav-r3-collapse ul {
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    
     .navbar-header {
     height: 117px;
 }
     
     .nav-logo-lg {
-        
-        top: 5px;
+    position: absolute;
+    z-index: 999;
     
-        margin-left: 10px;
-    height: 42px;
-    width: 180px;
+    top: -12px;
+    left: 15px;
+    
+    margin-left: 0px!important;
+
+    height: 107px;
+    width: 260px;
+    
+    background: url("images/m_FBT_logo_yuge.png") no-repeat  center;
+    background-position: 30% 20%;
     background-size: 100%;
+}
+    
+    .nav-r1-right-label-a-small {
+        display:inline;
     }
     
     .collapse-sign-in {
@@ -296,6 +384,25 @@
             font-weight: normal!important;
          color: #ffffff!important;
         } 
+    
+    .dropdown-menu {
+    width: 100%;
+    
+    left: 0%;
+    transform: none;
+        
+    }
+    
+     .nav-r1-left-ship{
+        font-size: 1em;
+    line-height: 1em;
+
+         
+}
+    
+    .nav-delivery li a {
+    padding-top: 10px!important;
+}
 
 }
 
@@ -374,8 +481,6 @@
     font-size: .9em;
     font-weight: 600;
     color: #ffffff!important;
-    
-    
 }
 
 .header-bottom-nav {
@@ -401,6 +506,68 @@
   .dropdown-menu-large .dropdown-header {
     padding: 3px 15px !important;
   }
+    
+    .dropdown-header-2 {
+        display: none;
+    }
+    
+    .nav-r2-right {
+    padding-left: 15px;
+        
+}
+    
+    .nav-r2-right a {
+        padding-top: 10px!important;
+        padding-bottom: 10px!important;
+        
+          font-family: 'Exo 2', sans-serif!important;
+    font-weight: 700!important;
+        
+    }
+    
+    .nav-r2-col-xs {
+        height: 110px;
+    }
+    
+    .nav-r2-col-xs li {
+        height: 30px;
+    }
+    
+   
+    
+    .nav-r1-col-xs {
+        display: block;
+        
+        background: #404041;
+}
+    .nav-r1-col-xs .collapse{
+        height: 119px;
+        
+        border-color: #b9bbbd;
+}
+    
+    .nav-r1-col-xs li{
+        padding-left: 30px;
+}
+    
+    .nav-r1-col-xs li a {
+        color: #ffffff!important;
+    }
+    
+    .nav-r1-col-xs li a {
+        color: #ffffff!important;
+    }
+    
+    .nav-r1-xs-number {
+        font-size: 2.25em;
+    }
+    
+     .nav-r1-col-xs li a:hover {
+        background-color: #404041!important;
+         
+         text-decoration: none!important;
+    }
+    
 
 }
 
@@ -452,17 +619,45 @@
       .tab-table-row td:nth-of-type(even) {
           background:#eeeeee;
       }
+    
+
+
+         
+}
  
 }
 
-@media (max-width: 456px){
     
-
-@media (max-width: 399px){
+@media (max-width: 518px){
     
     
     .nav-logo-lg {
+        
+        position: absolute;
+    z-index: 999;
+    top: -8px;
+    left: 15px;
+    margin-left: 0px!important;
+    height: 107px;
+    width: 210px;
+    background: url(images/m_FBT_logo_yuge.png) no-repeat center;
+    background-position: 30% 20%;
+    background-size: 100%;
       
+    }
+    
+    
+}
+    
+
+@media (max-width: 467px){
+    
+    .nav-r1-left-ship{
+        font-size: 1em;
+    line-height: 1em;   
+}
+    
+    .nav-logo-lg {
     top: 5px;
     left: 15px;
     
@@ -476,11 +671,23 @@
     background-size: 100%;
     }
     
-    
-}
 
-@media (max-width: 375px){
     
+    }
+
+@media (max-width: 343px){
+        .nav-logo-lg {
+      
+        top: 8px;
+        width: 75px;
+       
+        }
+    
+        .navbar-toggle {
+        margin-right: 8px;
+       
+        padding: 8px 4px!important;
+}
     }
     
 /*---------- /MEDIA QUERIES ----------*/
