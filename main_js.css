@@ -1,7 +1,6 @@
 html,
 body {
     height: 100%;
-/*    padding-top: 50px;*/
     }
 
 .row {
@@ -74,9 +73,7 @@ section {
 /*---------- NAV BAR ROW 1 ----------*/
 
 .nav-r1-container {
-/*    height: 35px;*/
-    background:#f4f7f9;
-    
+    background:#f4f7f9; 
 }
 
 .nav-r1-wrap,
@@ -92,7 +89,6 @@ section {
 
 .nav-r1-left-ship{
     padding-left:114px!important;
-/*    padding-right: 40px!important;*/
     
     font-family: 'Roboto Slab', serif;
     font-size: 1.2em;
@@ -102,16 +98,12 @@ section {
 }
 
 .nav-r1-left-ship-bold {
-    
     font-weight: 600;
-    
     color: #f6333c;
-    
     text-transform: uppercase;
 }
 
 .nav-r1-left-ship-bold:hover {
-    
     text-decoration: underline;
 }
 
@@ -121,11 +113,9 @@ section {
 }
 
 .nav-r1-right li a{
-    height:35px;
+    vertical-align: middle;
     
-    padding-top: 8px;
-    padding-bottom: 8px;
-    
+    line-height: 35px;
     text-transform: uppercase;
 }
 
@@ -138,13 +128,11 @@ section {
 .nav-r1-right a:hover,
      .nav-r1-right a:active,
      .nav-r1-right a:focus { 
-        
-         background-color: #f4f7f9!important;
-          color: black;
+        background-color: #f4f7f9!important;
+        color: black;
          
-         text-decoration: underline!important;
+        text-decoration: underline!important;
      }
-
 
 .nav-r1-right-label {
     font-family: 'Exo 2', sans-serif;
@@ -159,7 +147,6 @@ section {
 .nav-r1-right-label img {
     padding-left: 10px;
     padding-right: 10px;
-    
     margin-bottom: 5px;
 }
 
@@ -202,7 +189,6 @@ section {
     padding: 9px 11px;
     
     font-size: 1.1em;
-    
     color:#ffffff;    
 }
 
@@ -212,16 +198,13 @@ section {
     font-family: 'Exo 2', sans-serif;
     font-size: 1.1em;
     font-weight:500;
-    
     color:#ffffff;
-    
     text-transform: uppercase;
 }
 
 .cart-wrap {
     width: 170px;
     height: 35px;
-    
     background:#404041;
 }
 
@@ -233,11 +216,6 @@ section {
     display: none;
 }
 
-/*
-.collapse-cart-container {
-    height:44px;
-}
-*/
 
 .cart-container {
      width: 40px; 
@@ -252,20 +230,15 @@ section {
     font-family: 'Exo 2', sans-serif;
     font-size: 1.1em;
     font-weight:500;
-    
     line-height: 35px;
-    
     color:#ffffff;
-    
     text-transform: uppercase;
 }
 
 .nav-delivery {
     display:inline-block;
     margin-bottom: 0px;
-    
-/*    text-transform: uppercase;*/
-}
+    }
 
 .nav-delivery-2 {
     display: none;
@@ -285,7 +258,8 @@ section {
 .nav-r2-container {
     border: none;
     border-radius: 0px;
-    
+    border-bottom: 1px solid #eeeeee;
+
     background-color: #58595b;
 }
 
@@ -309,9 +283,7 @@ section {
     font-size: 1.25em;
     font-weight:300;
     color: #b9bbbd!important;
-    
     line-height: 44px;
-    
     text-transform: uppercase;
 }
 
@@ -343,7 +315,6 @@ section {
     background-color: #ffdb4a;
     
     font-size: 24px;
-    
     color:#ffffff!important;
 }
 
@@ -354,8 +325,6 @@ section {
 }
 
 .search-height {
-/*    margin-top: 6px;*/
-    
     height: 44px;
     
     border-radius: 0px;
@@ -403,52 +372,42 @@ section {
 .giftbot span {
     display: inline-block;
     
-/*    margin-top: 8px;*/
-    
-    background: url(images/robot_1.png) no-repeat center;
-    background-position: 29% 27%;
     width: 84px;
     height: 78px;
+        
+    background: url(images/robot_1.png) no-repeat center;
+    background-position: 29% 27%;
+   
     
     vertical-align: middle;
 }
 
 .giftbot span:hover{
-/*    position: absolute;*/
-    background: url(images/robot_2.png) no-repeat center;
-        background-position: 29% 27%;
-
     width: 84px;
     height: 78px;
+    
+    background: url(images/robot_2.png) no-repeat center;
+    background-position: 29% 27%;
 }
-
 /*------- /GIFT BOT TAB -------*/
 
 /*-------INVENTED HERE TAB -------*/
 
 .invented-here span {
-/*    position: absolute;*/
     display: inline-block;
-    
-/*    margin-top: 8px;*/
-    
-    background: url(images/pin_1.png) no-repeat center;
     width: 52px;
     height: 78px;
+        
+    background: url(images/pin_1.png) no-repeat center;
     
-vertical-align: middle;
-
-   
+    vertical-align: middle;
 }
 
 .invented-here:hover span{
-/*    position: absolute;*/
     display: inline-block;
     background: url(images/pin_2.png) no-repeat center;
     width: 52px;
     height: 78px;
-    
-  
 }
 /*-------END INVENTED HERE TAB -------*/
 
@@ -470,12 +429,10 @@ vertical-align: middle;
 }
 
 .nav-r3 li a{
-    
     font-family: 'Exo 2', sans-serif;
     font-size: 1.25em;
     font-weight: 700;
     color: #58595b!important;
-    
     
     text-transform: uppercase;
 }
@@ -495,6 +452,7 @@ vertical-align: middle;
 .navbar-header {
     height: 72px;
 }
+
 .navbar-brand {
   padding: 2px;
     padding-left: 10px;
@@ -502,13 +460,12 @@ vertical-align: middle;
 
 .navbar-brand>img {
     margin-top: 4px;
-  width: auto;
-  height: 170%;
-    
+    width: auto;
+    height: 170%;
 }
 
 .navbar-toggle {
-     margin-right: 10px;
+    margin-right: 10px;
     
     height: 40px;
     padding-top: 8px;   
@@ -519,11 +476,6 @@ vertical-align: middle;
     border-radius: 0px;
     
     outline: 0;  
-}
-
-.navbar-toggle {
-    
-   
 }
 
 .icon-bar {
@@ -538,26 +490,18 @@ vertical-align: middle;
 .navbar-inverse .navbar-toggle {
     margin-top: 0px;
     margin-bottom: 0px;
-    /* padding-top: 10px; */
-    background-color: #ffdb4a;
-    
     border: none;
+    background-color: #ffdb4a;
 }
 
 .navbar-inverse .navbar-toggle {
-    
     background-color: #ffdb4a;
-
-    
     border: none;
 }
 
 .navbar-inverse .navbar-toggle:focus,
 .navbar-inverse .navbar-toggle:hover {
-    
     background-color: #eeeeee!important;
-
-    
     border: none;
 }
 
@@ -578,7 +522,6 @@ vertical-align: middle;
     background-size: 100%;
 }
 
-
 #topNav {
     z-index: 999;
 }
@@ -593,16 +536,11 @@ vertical-align: middle;
   position: static !important;
 }
 .dropdown-menu {
+    padding: 20px 0px;
     width: 98%;
     
     left: 50%;
     transform: translateX(-50%);
-
-/*
-  margin-left: 16px;
-  margin-right: 16px;
-*/
-  padding: 20px 0px;
 }
 .dropdown-menu-large > li > ul {
   padding: 0;
@@ -683,13 +621,17 @@ vertical-align: middle;
 
 /*-- change navbar dropdown color --*/
 .header-dropdown-menu li a {
-/*    background-color: #f24c22;*/
-    
     padding: 10px 20px;
     color:#ffffff;
   }
-/*---------- /Dropdown ----------*/
 
+.dropdwon-menu-mega {
+    
+    background-color: #ffffff!important;
+    border: 1px solid #eeeeee;
+    border-radius: 0!important;
+}
+/*---------- /Dropdown ----------*/
 
 
 /*---------- /NAV BAR ----------*/
