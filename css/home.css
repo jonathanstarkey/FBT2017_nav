@@ -1,0 +1,18 @@
+.container-base {
+    padding-left: 0px;
+    padding-right: 0px;
+    
+}
+
+.container-3rd-header {
+    background: orange;
+    height: 485px;
+}
+
+.container-2-3rd-carousel {
+    padding: 40px 20px;
+    height: 485px;
+}
+
+
+

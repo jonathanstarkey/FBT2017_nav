@@ -375,7 +375,7 @@ section {
     width: 84px;
     height: 78px;
         
-    background: url(images/robot_1.png) no-repeat center;
+    background: url(../images/robot_1.png) no-repeat center;
     background-position: 29% 27%;
    
     
@@ -386,7 +386,7 @@ section {
     width: 84px;
     height: 78px;
     
-    background: url(images/robot_2.png) no-repeat center;
+    background: url(../images/robot_2.png) no-repeat center;
     background-position: 29% 27%;
 }
 /*------- /GIFT BOT TAB -------*/
@@ -398,14 +398,14 @@ section {
     width: 52px;
     height: 78px;
         
-    background: url(images/pin_1.png) no-repeat center;
+    background: url(../images/pin_1.png) no-repeat center;
     
     vertical-align: middle;
 }
 
 .invented-here:hover span{
     display: inline-block;
-    background: url(images/pin_2.png) no-repeat center;
+    background: url(../images/pin_2.png) no-repeat center;
     width: 52px;
     height: 78px;
 }
@@ -517,7 +517,7 @@ section {
     height: 107px;
     width: 436px;
     
-    background: url("images/FBT_logo_yuge.png") no-repeat  center;
+    background: url("../images/FBT_logo_yuge.png") no-repeat  center;
     background-position: 30% 20%;
     background-size: 100%;
 }
@@ -635,6 +635,7 @@ section {
 
 
 /*---------- /NAV BAR ----------*/
+
 
  
 
