@@ -1,0 +1,45 @@
+.white-outline-btn {
+    position: absolute;
+    bottom: 40px;
+    padding: 10px 40px;
+    height: 50px;
+    
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 0px;
+    
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.2em;
+    font-weight:400;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.btn-left {
+    left: 40px;
+}
+
+.btn-right {
+    right: 40px;
+}
+
+.white-outline-btn:hover,
+.white-outline-btn:focus,
+.white-outline-btn:active {
+    background-color: rgba(255,255,255,0.5);
+    color: #ffffff;
+}
+
+.btn-chevron {
+    padding-left: 5px;
+}
+
+/*---- MEDIA QUERIES -----*/
+
+@media (max-width: 600px){
+    
+    .btn-100 {
+        left: 20px;
+        width: 90%;
+    }
+}

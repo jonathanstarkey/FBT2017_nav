@@ -1,0 +1,117 @@
+.sku-number, 
+.original-price,
+.current-price,
+.product-rating,
+.rating-badge {
+        font-family: 'Exo 2', sans-serif;
+}
+
+.sku-number {
+    margin: 0px;
+    font-size: 1.1em;
+    font-weight:500;
+    color:#58595b;
+    text-transform: uppercase;
+}
+
+.product-label {
+    margin-top: 0px;
+    margin-bottom: 8px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1.1em;
+}
+
+.original-price {
+    margin: 0px;
+    
+    text-decoration: line-through;
+    color:#c0c0c0;
+}
+
+.current-price {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    
+    font-size: 2em;
+    font-weight: 600;
+    color: #3f5383;
+}
+
+.product-rating {
+    margin-right: 5px;
+    
+    font-size: 1em;
+    font-weight: 600;
+    color: #404041;
+}
+
+.rating-divider {
+    margin-right: 5px;
+    border-right: 1px solid black;
+}
+
+.rating-badge {
+    background: #404041;
+    
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.short-product-p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    
+    color: #404041;
+}
+
+.options-container {
+    padding: 15px;
+    border: 1px solid #c0c0c0;
+}
+
+.options-container h3 {
+    margin-top: 0px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    
+    color: #404041;
+}
+
+.options-wrap {
+    padding: 0px;
+}
+
+.options-wrap .input-group {
+    max-width: 120px;
+}
+
+.options-wrap .input-group-btn {
+    border-radius: 0px;
+}
+
+
+.add-to-cart-btn {
+    background-color: #f6333c;
+    border-radius: 0px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    
+    color: #ffffff;
+    
+}
+
+
+
+
+
+
+
+
+
