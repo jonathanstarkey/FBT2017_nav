@@ -16,6 +16,10 @@
     text-decoration: underline;
 }
 
+.background {
+    background: url(../images/hero_1_lg.jpg)
+}
+
 .click-here-a:hover {
     color: #404041;
 }
@@ -28,7 +32,7 @@
 
 .container-header {
     display: block;
-    height: 400px;
+    height: 460px;
     
     padding: 20px 40px;
     
@@ -53,6 +57,10 @@
     text-transform: uppercase;
 }
 
+.container-a-row {
+/*    min-height: 440px;*/
+    background: orange;
+}
 .bkgd-orange {
     background: orange;
 }
@@ -63,17 +71,21 @@
 
 .container-2-3rd-carousel {
     padding: 20px 20px;
-    height: 400px;
+    height: 460px;
+/*    max-height: 440px;*/
+    
+    background: #ffffff;
 }
 
 .image-half-5050-container {
     padding: 0px;
     overflow: hidden;
+    
+    height: 460px;
 }
 
 .image-half-5050 {
-    width: 100%;
-    max-height: 400px;
+    
 }
 
 
