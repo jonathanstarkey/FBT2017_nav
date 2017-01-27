@@ -13,7 +13,8 @@
 .original-price,
 .current-price,
 .product-rating,
-.rating-badge {
+.rating-badge,
+.product-tab-container {
         font-family: 'Exo 2', sans-serif;
 }
 
@@ -119,9 +120,96 @@
 }
 
 
+.product-tab-container {
+    padding-left: 0px;
+    padding-right: 0px;
+/*    height: 50px;*/
+    
+    background-color: #336589;
+}
+
+.product-tab-container ul {
+    border-bottom: none;
+}
 
 
 
+.product-tab-container li a {
+    margin: 0px;
+    border: none;
+    border-radius: 0px;
+     font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+    color:#ffffff;
+}
+
+.product-tab-container .panel-group .panel {
+    border-radius: 0px;
+}
+
+.product-tab-container .panel-default .panel-heading {
+    background-color: #336589;
+    border-radius: 0px;
+    
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+    color:#ffffff;
+}
+
+.product-tab-container .panel-body {
+            border: solid 1px #336589;
+
+}
+
+.product-tab-container li,
+.product-tab-container li a {
+     margin-bottom: 0px;
+    
+}
+
+
+.product-tab-container li:hover,
+.product-tab-container li:active,
+.product-tab-container li:focus,
+.product-tab-container li a:hover,
+.product-tab-container li a:active,
+.product-tab-container li a:focus {
+   
+     color: #336589;
+}
+
+
+.product-tab-container .nav-tabs a {
+    border: none;
+    
+}
+
+.product-tab-container .nav-tabs .active a,
+.product-tab-container .nav-tabs .active a:hover,
+.product-tab-container .nav-tabs .active a:active,
+.product-tab-container .nav-tabs .active a:focus,
+.product-tab-container .nav-tabs a:hover,
+.product-tab-container .nav-tabs a:active,
+.product-tab-container .nav-tabs a:focus{
+    border: none;
+    color: #336589;
+}
+
+
+
+@media (max-width: 767px) {
+    .product-tab-container  {
+        margin-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+                
+        background-color: #ffffff;
+    }
+}
 
 
 
