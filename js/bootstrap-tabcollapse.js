@@ -27,12 +27,12 @@
         accordionClass: 'visible-xs',
         tabsClass: 'hidden-xs',
         accordionTemplate: function(heading, groupId, parentId, active) {
-            return  '<div class="panel panel-default">' +
+            return  '<div id="' + parentId + '" class="panel panel-default">' +
                     '   <div class="panel-heading">' +
                     '      <h4 class="panel-title">' +
                     '      </h4>' +
                     '   </div>' +
-                    '   <div id="' + groupId + '" class="panel-collapse collapse ' + (active ? 'in' : '') + '">' +
+                    '   <div id="' + groupId + '" class="panel-collapse collapse ' + (active ? '' : '') + '">' +
                     '       <div class="panel-body js-tabcollapse-panel-body">' +
                     '       </div>' +
                     '   </div>' +
@@ -207,6 +207,7 @@
         }
 
         var $tabPane = $(tabSelector),
+            
             groupId = $tabPane.attr('id') + '-collapse',
             $panel = $(this.options.accordionTemplate($heading, groupId, parentId, active));
         $panel.find('.panel-heading > .panel-title').append(this._tabHeadingToPanelHeading($heading, groupId, parentId, active));
