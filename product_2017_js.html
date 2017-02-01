@@ -802,7 +802,6 @@ $(".input-number").keydown(function (e) {
 });
             </script>
                 
-<!--
                 <script type="text/javascript">
                $(function () {
     $('#review a').click(function (e) {
@@ -812,13 +811,25 @@ $(".input-number").keydown(function (e) {
 });
             </script>
                 
--->
+                 </script>
+                
+                <script type="text/javascript">
+               $(function () {
+    $('#review a').click(function (e) {
+        e.preventDefault();
+        $('a[href="' + $(this).attr('href') + '"]').collapse('toggle');
+    })
+});
+            </script>
+                
                 
                 <script>
-                
-                
-                
-                </script>
+$(document).ready(function(){
+        $('.product-slider-review').on('click',function(){
+            $('html, body').animate({scrollTop: $("#customer").offset().top}, 300);
+        });
+    });
+</script>
                 
             
              <script type="text/javascript">
