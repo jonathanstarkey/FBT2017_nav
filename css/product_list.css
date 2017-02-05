@@ -1,0 +1,103 @@
+.item {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.product-page-thumbnail {
+/*    min-height: 360px !important;*/
+    
+    padding: 10px;
+}
+
+.product-page-thumbnail img {
+    margin: 0px;
+}
+
+.product-caption {
+/*
+    position: absolute; 
+    bottom: 30px; 
+    left: 0; 
+    right: 0;
+*/
+    padding: 10px 0 0 0!important;
+    
+    vertical-align: bottom;
+}
+
+.product-price-wrap {
+    height: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+ 
+.product-catalog-label {
+/*    max-width: 215px;*/
+    
+    margin: 0 0 10px; 
+    
+    font-family: 'Roboto', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1.25em;
+    font-weight:700;
+    text-align: center;
+    
+    word-wrap:break-word;
+    
+    color: #414042;
+/*    text-transform: uppercase;*/
+}
+
+.product-list-price {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.product-list-price h3{
+    margin-bottom: 2px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.1em;
+}
+
+.info-btn { 
+    width: 49%;
+/*
+    padding-left: 50%;
+    padding-right: 50%;
+*/
+    background: #f24c22;
+    border-radius:0;
+    
+    font-family: 'Roboto', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: .8em;
+    font-weight:700;
+    
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.where-to-buy-btn {
+    width: 49%;
+    border-color: #0199a7;
+     border-radius:0;
+    
+    font-family: 'Roboto', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: .8em;
+    font-weight:700;
+    
+    color: #0199a7;
+    text-transform: uppercase;
+}
+
+.where-to-buy-btn:hover,
+.where-to-buy-btn:active, 
+.where-to-buy-btn:focus {
+    background-color: #0199a7;
+     border-radius:0;
+    
+    font-family: 'Roboto', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    
+    color: #ffffff;
+    text-transform: uppercase;
+}
