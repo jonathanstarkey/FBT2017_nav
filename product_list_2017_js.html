@@ -239,14 +239,20 @@
         <!--/.navbar -->
         
         <!-- Begin page content -->
+ 
+        <ul class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li class="active">Wimzle</li>
+        </ul>        
 
-        <div class="container-fluid">
+        <div class="container-fluid product-list-container">
             <div >
                 <div>
                     <!-- LEFT FILTER PANEL  -->
                     <div class="pull-left col-lg-2 col-md-3 col-sm-4 col-xs-12 left-filter-panel-container" id="" >
-                        <button  type="button" id="filter-toggle-button" class="filter-button navbar-toggle collapsed" data-toggle="collapse" data-target="#filters-wrap"> Filter </button>
-                        <div class="navbar-collapse collapse" style="" id="filters-wrap">
+                        <button  type="button" id="filter-toggle-button" class="filter-button navbar-toggle collapsed" data-toggle="collapse" data-target="#filters-wrap"> Filter <i class="more-less glyphicon hidden-sm hidden-md hidden-lg glyphicon-plus pull-right"></i></button>
+                        <div class="navbar-collapse collapse " style="" id="filters-wrap">
                             
                             <div class="filters-content" style="">
                                     <div class="panel-group" id="accordian">
@@ -313,43 +319,24 @@
                     </div>
                     <div class="" style="min-height: 1266px;">
                         <div class="">
-                            <h1>New Arrivals</h1> </div>
-                        <p class="category-image"><img src="./Magento Responsive Theme New Arrivals - Women - Fashion Ajax Bootstrap_files/plp-w-newarrivals_1.jpg" alt="New Arrivals" title="New Arrivals"></p>
-                        <!--
-
-                    <div class="category-products">
-                        <div class="toolbar ">
-                            <div class="navbar-inner">
+                            <h1>Best Sellers</h1> </div>
+<!--                        <p class="category-image"><img src="./Magento Responsive Theme New Arrivals - Women - Fashion Ajax Bootstrap_files/plp-w-newarrivals_1.jpg" alt="New Arrivals" title="New Arrivals"></p>-->
+                     <div class="toolbar col-xs-12 col-sm-12 col-md-9  col-lg-10">
+                            <div class=" pull-left">
                                 <p class="navbar-text amount hidden-xs">
-                                    <strong>3 Item(s)</strong>
+                                    <strong>Items 1 to 12 of 36 total</strong>
                                 </p>
--->
-                        <!--div class="view-mode pull-right span2"-->
-                        <!--
-                                <ul class="nav navbar-nav view-selector">
-                                    <li class="disabled hidden-sm hidden-xs">
-                                        <p class="navbar-text">View:&nbsp;</p>
-                                    </li>
-                                    <li class=" active">
-                                        <a href="http://estilo.rwdthemes.com/default/fashion/women/new-arrivals.html?ajax=1&amp;mode=grid" title="Grid" class="grid"><span class="hidden-xs hidden-sm">Grid</span>&nbsp;<span class="glyphicon glyphicon-th"></span></a>
-                                    </li>
-                                    <li class="">
-                                        <a href="http://estilo.rwdthemes.com/default/fashion/women/new-arrivals.html?ajax=1&amp;mode=list" title="List" class="list"><span class="hidden-xs hidden-sm">List</span>&nbsp;<span class="glyphicon glyphicon-th-list"></span></a>
-                                    </li>
-                                </ul>
--->
-                        <!--/div-->
-                        <!--
+
                                 <div class="navbar-form amount navbar-left">
                                     <span class="hidden-xs hidden-sm">Show</span>&nbsp;
                                     <select>
-                                        <option value="http://estilo.rwdthemes.com/default/fashion/women/new-arrivals.html?ajax=1&amp;limit=12&amp;mode=grid" selected="selected">
+                                        <option value="##" selected="selected">
                                             12
                                         </option>
-                                        <option value="http://estilo.rwdthemes.com/default/fashion/women/new-arrivals.html?ajax=1&amp;limit=24&amp;mode=grid">
+                                        <option value="">
                                             24
                                         </option>
-                                        <option value="http://estilo.rwdthemes.com/default/fashion/women/new-arrivals.html?ajax=1&amp;limit=36&amp;mode=grid">
+                                        <option value="">
                                             36
                                         </option>
                                     </select>
@@ -360,26 +347,42 @@
 
                                     <span>Sort By</span>
                                     <select>
-                                        <option value="http://estilo.rwdthemes.com/default/fashion/women/new-arrivals.html?ajax=1&amp;dir=asc&amp;mode=grid&amp;order=position" selected="selected">
+                                        <option value="" selected="selected">
                                             Position </option>
-                                        <option value="http://estilo.rwdthemes.com/default/fashion/women/new-arrivals.html?ajax=1&amp;dir=asc&amp;mode=grid&amp;order=name">
+                                        <option value="">
                                             Name </option>
-                                        <option value="http://estilo.rwdthemes.com/default/fashion/women/new-arrivals.html?ajax=1&amp;dir=asc&amp;mode=grid&amp;order=price">
+                                        <option value="">
                                             Price </option>
                                     </select>
-                                    <a href="http://estilo.rwdthemes.com/default/fashion/women/new-arrivals.html?ajax=1&amp;dir=desc&amp;mode=grid&amp;order=position" title="Set Descending Direction"><span class="glyphicon glyphicon-chevron-down"></span></a>
+                                    <a href="" title="Set Descending Direction"><span class="glyphicon glyphicon-chevron-down"></span></a>
                                 </div>
                             </div>
-                        </div>
--->
-                        <div class="container-fluid">
+                            <div class="pages navbar-right navbar-form">
+                                    <ul class="pagination">
+                                        <li class="disabled"><span>Page:</span></li>
+                                        <li class="active"><span>1</span></li>
+                                        <li><a href="http://estilo.rwdthemes.com/default/home-decor.html?p=2">2</a></li>
+                                        <li><a href="http://estilo.rwdthemes.com/default/home-decor.html?p=3">3</a></li>
+                                        <li>
+                                            <a class="next i-next" href="http://estilo.rwdthemes.com/default/home-decor.html?p=2" title="Next">
+                                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                            </a>
+                                        </li>
+                                     </ul>
+                                </div>
+                        </div> 
+                    <div class="category-products">
+
+                        <div class="container-fluid product-list-container">
                             <ul class="row product-list-row-fbt grid" id="" style="list-style: none;">
                                 <li class="item   col-lg-2 col-md-3 col-sm-4 col-xs-12 hero-feature" style="z-index:999;">
                                     <div class="product-page-thumbnail thumbnail" style="">
                                         <div class="thumbnail-border-fbt" style="">
                                         <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
                                         <div class="caption product-caption" style="">
-                                            <h3 class="product-catalog-label"> Choose </h3>
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label"> Choose </h3>
+                                            </div>
                                             <div class="col-xs-12 col-sm-12 product-price-wrap">
                                                 <div class="col-xs-6 product-list-price">
                                                     <h3 class=""> $268.95</h3> </div>
@@ -396,7 +399,9 @@
                                         <div class="thumbnail-border-fbt" style="">
                                         <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
                                         <div class="caption product-caption" style="">
-                                            <h3 class="product-catalog-label"> Choose </h3>
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label">Choose Your Own Adventure - Wacky Friends 3 Book Set </h3>
+                                            </div>
                                             <div class="col-xs-12 col-sm-12 product-price-wrap">
                                                 <div class="col-xs-6 product-list-price">
                                                     <h3 class=""> $268.95</h3> </div>
@@ -413,7 +418,9 @@
                                         <div class="thumbnail-border-fbt" style="">
                                         <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
                                         <div class="caption product-caption" style="">
-                                            <h3 class="product-catalog-label"> Choose - 4 Book Boxed Set #1 - 4 Book Boxed Set #1 - 4 Book Boxed Set #1 </h3>
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label"> Choose </h3>
+                                            </div>
                                             <div class="col-xs-12 col-sm-12 product-price-wrap">
                                                 <div class="col-xs-6 product-list-price">
                                                     <h3 class=""> $268.95</h3> </div>
@@ -430,7 +437,9 @@
                                         <div class="thumbnail-border-fbt" style="">
                                         <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
                                         <div class="caption product-caption" style="">
-                                            <h3 class="product-catalog-label">  Choose Your Own Adventure - 4 Book Boxed Set #1</h3>
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label"> Choose Your Own Adventure - Wacky Friends 3 Book Set </h3>
+                                            </div>
                                             <div class="col-xs-12 col-sm-12 product-price-wrap">
                                                 <div class="col-xs-6 product-list-price">
                                                     <h3 class=""> $268.95</h3> </div>
@@ -447,7 +456,9 @@
                                         <div class="thumbnail-border-fbt" style="">
                                         <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
                                         <div class="caption product-caption" style="">
-                                            <h3 class="product-catalog-label"> Choose </h3>
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label"> Choose Your Own Adventure - Wacky Friends 3 Book - Wacky Friends 3 Book Set </h3>
+                                            </div>
                                             <div class="col-xs-12 col-sm-12 product-price-wrap">
                                                 <div class="col-xs-6 product-list-price">
                                                     <h3 class=""> $268.95</h3> </div>
@@ -464,7 +475,9 @@
                                         <div class="thumbnail-border-fbt" style="">
                                         <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
                                         <div class="caption product-caption" style="">
-                                            <h3 class="product-catalog-label">  Choose Your Own Adventure - 4 Book Boxed Set #1 </h3>
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label"> Choose </h3>
+                                            </div>
                                             <div class="col-xs-12 col-sm-12 product-price-wrap">
                                                 <div class="col-xs-6 product-list-price">
                                                     <h3 class=""> $268.95</h3> </div>
@@ -481,7 +494,9 @@
                                         <div class="thumbnail-border-fbt" style="">
                                         <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
                                         <div class="caption product-caption" style="">
-                                            <h3 class="product-catalog-label"> Choose </h3>
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label"> Wacky Friends 3 Book </h3>
+                                            </div>
                                             <div class="col-xs-12 col-sm-12 product-price-wrap">
                                                 <div class="col-xs-6 product-list-price">
                                                     <h3 class=""> $268.95</h3> </div>
@@ -498,7 +513,9 @@
                                         <div class="thumbnail-border-fbt" style="">
                                         <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
                                         <div class="caption product-caption" style="">
-                                            <h3 class="product-catalog-label">Choose Your Own Adventure</h3>
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label">  Choose Your Own Adventure </h3>
+                                            </div>
                                             <div class="col-xs-12 col-sm-12 product-price-wrap">
                                                 <div class="col-xs-6 product-list-price">
                                                     <h3 class=""> $268.95</h3> </div>
@@ -515,8 +532,9 @@
                                         <div class="thumbnail-border-fbt" style="">
                                         <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
                                         <div class="caption product-caption" style="">
-                                            <h3 class="product-catalog-label"> Choose Your Own Adventure - 4 Book Boxed Set #1
-                                            - 4 Book Boxed Set #1</h3>
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label">  Choose Your Own Adventure - Wacky Friends 3 Book - Wacky Friends 3 Book Set </h3>
+                                            </div>
                                             <div class="col-xs-12 col-sm-12 product-price-wrap">
                                                 <div class="col-xs-6 product-list-price">
                                                     <h3 class=""> $268.95</h3> </div>
@@ -533,7 +551,389 @@
                                         <div class="thumbnail-border-fbt" style="">
                                         <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
                                         <div class="caption product-caption" style="">
-                                            <h3 class="product-catalog-label"> Choose Your Own Adventure - 4 Book Boxed Set #1 </h3>
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label"> Choose </h3>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 product-price-wrap">
+                                                <div class="col-xs-6 product-list-price">
+                                                    <h3 class=""> $268.95</h3> </div>
+                                                <div class=" pull-right"> <a href="#customer" class="center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></a> <a href="#"><span class="product-rating">4.5</span> <span class="rating-divider"></span> </a><span class="badge rating-badge">42</span> </div>
+                                            </div>
+                                            <div col-xs-12 col-sm-12> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#" class="btn btn-danger info-btn "><span class=""></span> More Info</a> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#&wtb" class="btn btn-default pull-right add-to-cart-btn-fbt">Add to Cart</a> </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider hidden  visible-xs">&nbsp;</li>
+                                <li class="item   col-lg-2 col-md-3 col-sm-4 col-xs-12 hero-feature" style="z-index:999;">
+                                    <div class="product-page-thumbnail thumbnail" style="">
+                                        <div class="thumbnail-border-fbt" style="">
+                                        <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
+                                        <div class="caption product-caption" style="">
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label"> Choose </h3>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 product-price-wrap">
+                                                <div class="col-xs-6 product-list-price">
+                                                    <h3 class=""> $268.95</h3> </div>
+                                                <div class=" pull-right"> <a href="#customer" class="center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></a> <a href="#"><span class="product-rating">4.5</span> <span class="rating-divider"></span> </a><span class="badge rating-badge">42</span> </div>
+                                            </div>
+                                            <div col-xs-12 col-sm-12> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#" class="btn btn-danger info-btn "><span class=""></span> More Info</a> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#&wtb" class="btn btn-default pull-right add-to-cart-btn-fbt">Add to Cart</a> </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider hidden  visible-xs">&nbsp;</li>
+                                <li class="item   col-lg-2 col-md-3 col-sm-4 col-xs-12 hero-feature" style="z-index:999;">
+                                    <div class="product-page-thumbnail thumbnail" style="">
+                                        <div class="thumbnail-border-fbt" style="">
+                                        <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
+                                        <div class="caption product-caption" style="">
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label">Choose Your Own Adventure - Wacky Friends 3 Book Set </h3>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 product-price-wrap">
+                                                <div class="col-xs-6 product-list-price">
+                                                    <h3 class=""> $268.95</h3> </div>
+                                                <div class=" pull-right"> <a href="#customer" class="center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></a> <a href="#"><span class="product-rating">4.5</span> <span class="rating-divider"></span> </a><span class="badge rating-badge">42</span> </div>
+                                            </div>
+                                            <div col-xs-12 col-sm-12> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#" class="btn btn-danger info-btn "><span class=""></span> More Info</a> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#&wtb" class="btn btn-default pull-right add-to-cart-btn-fbt">Add to Cart</a> </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider hidden  visible-xs">&nbsp;</li>
+                                <li class="item   col-lg-2 col-md-3 col-sm-4 col-xs-12 hero-feature" style="z-index:999;">
+                                    <div class="product-page-thumbnail thumbnail" style="">
+                                        <div class="thumbnail-border-fbt" style="">
+                                        <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
+                                        <div class="caption product-caption" style="">
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label"> Choose </h3>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 product-price-wrap">
+                                                <div class="col-xs-6 product-list-price">
+                                                    <h3 class=""> $268.95</h3> </div>
+                                                <div class=" pull-right"> <a href="#customer" class="center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></a> <a href="#"><span class="product-rating">4.5</span> <span class="rating-divider"></span> </a><span class="badge rating-badge">42</span> </div>
+                                            </div>
+                                            <div col-xs-12 col-sm-12> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#" class="btn btn-danger info-btn "><span class=""></span> More Info</a> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#&wtb" class="btn btn-default pull-right add-to-cart-btn-fbt">Add to Cart</a> </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider hidden  visible-xs">&nbsp;</li>
+                                <li class="item   col-lg-2 col-md-3 col-sm-4 col-xs-12 hero-feature" style="z-index:999;">
+                                    <div class="product-page-thumbnail thumbnail" style="">
+                                        <div class="thumbnail-border-fbt" style="">
+                                        <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
+                                        <div class="caption product-caption" style="">
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label"> Choose Your Own Adventure - Wacky Friends 3 Book Set </h3>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 product-price-wrap">
+                                                <div class="col-xs-6 product-list-price">
+                                                    <h3 class=""> $268.95</h3> </div>
+                                                <div class=" pull-right"> <a href="#customer" class="center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></a> <a href="#"><span class="product-rating">4.5</span> <span class="rating-divider"></span> </a><span class="badge rating-badge">42</span> </div>
+                                            </div>
+                                            <div col-xs-12 col-sm-12> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#" class="btn btn-danger info-btn "><span class=""></span> More Info</a> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#&wtb" class="btn btn-default pull-right add-to-cart-btn-fbt">Add to Cart</a> </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider hidden  visible-xs">&nbsp;</li>
+                                <li class="item   col-lg-2 col-md-3 col-sm-4 col-xs-12 hero-feature" style="z-index:999;">
+                                    <div class="product-page-thumbnail thumbnail" style="">
+                                        <div class="thumbnail-border-fbt" style="">
+                                        <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
+                                        <div class="caption product-caption" style="">
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label"> Choose Your Own Adventure - Wacky Friends 3 Book - Wacky Friends 3 Book Set </h3>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 product-price-wrap">
+                                                <div class="col-xs-6 product-list-price">
+                                                    <h3 class=""> $268.95</h3> </div>
+                                                <div class=" pull-right"> <a href="#customer" class="center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></a> <a href="#"><span class="product-rating">4.5</span> <span class="rating-divider"></span> </a><span class="badge rating-badge">42</span> </div>
+                                            </div>
+                                            <div col-xs-12 col-sm-12> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#" class="btn btn-danger info-btn "><span class=""></span> More Info</a> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#&wtb" class="btn btn-default pull-right add-to-cart-btn-fbt">Add to Cart</a> </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider hidden  visible-xs">&nbsp;</li>
+                                <li class="item   col-lg-2 col-md-3 col-sm-4 col-xs-12 hero-feature" style="z-index:999;">
+                                    <div class="product-page-thumbnail thumbnail" style="">
+                                        <div class="thumbnail-border-fbt" style="">
+                                        <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
+                                        <div class="caption product-caption" style="">
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label"> Choose </h3>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 product-price-wrap">
+                                                <div class="col-xs-6 product-list-price">
+                                                    <h3 class=""> $268.95</h3> </div>
+                                                <div class=" pull-right"> <a href="#customer" class="center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></a> <a href="#"><span class="product-rating">4.5</span> <span class="rating-divider"></span> </a><span class="badge rating-badge">42</span> </div>
+                                            </div>
+                                            <div col-xs-12 col-sm-12> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#" class="btn btn-danger info-btn "><span class=""></span> More Info</a> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#&wtb" class="btn btn-default pull-right add-to-cart-btn-fbt">Add to Cart</a> </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider hidden  visible-xs">&nbsp;</li>
+                                <li class="item   col-lg-2 col-md-3 col-sm-4 col-xs-12 hero-feature" style="z-index:999;">
+                                    <div class="product-page-thumbnail thumbnail" style="">
+                                        <div class="thumbnail-border-fbt" style="">
+                                        <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
+                                        <div class="caption product-caption" style="">
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label"> Wacky Friends 3 Book </h3>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 product-price-wrap">
+                                                <div class="col-xs-6 product-list-price">
+                                                    <h3 class=""> $268.95</h3> </div>
+                                                <div class=" pull-right"> <a href="#customer" class="center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></a> <a href="#"><span class="product-rating">4.5</span> <span class="rating-divider"></span> </a><span class="badge rating-badge">42</span> </div>
+                                            </div>
+                                            <div col-xs-12 col-sm-12> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#" class="btn btn-danger info-btn "><span class=""></span> More Info</a> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#&wtb" class="btn btn-default pull-right add-to-cart-btn-fbt">Add to Cart</a> </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider hidden  visible-xs">&nbsp;</li>
+                                <li class="item   col-lg-2 col-md-3 col-sm-4 col-xs-12 hero-feature" style="z-index:999;">
+                                    <div class="product-page-thumbnail thumbnail" style="">
+                                        <div class="thumbnail-border-fbt" style="">
+                                        <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
+                                        <div class="caption product-caption" style="">
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label">  Choose Your Own Adventure </h3>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 product-price-wrap">
+                                                <div class="col-xs-6 product-list-price">
+                                                    <h3 class=""> $268.95</h3> </div>
+                                                <div class=" pull-right"> <a href="#customer" class="center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></a> <a href="#"><span class="product-rating">4.5</span> <span class="rating-divider"></span> </a><span class="badge rating-badge">42</span> </div>
+                                            </div>
+                                            <div col-xs-12 col-sm-12> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#" class="btn btn-danger info-btn "><span class=""></span> More Info</a> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#&wtb" class="btn btn-default pull-right add-to-cart-btn-fbt">Add to Cart</a> </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider hidden  visible-xs">&nbsp;</li>
+                                <li class="item   col-lg-2 col-md-3 col-sm-4 col-xs-12 hero-feature" style="z-index:999;">
+                                    <div class="product-page-thumbnail thumbnail" style="">
+                                        <div class="thumbnail-border-fbt" style="">
+                                        <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
+                                        <div class="caption product-caption" style="">
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label">  Choose Your Own Adventure - Wacky Friends 3 Book - Wacky Friends 3 Book Set </h3>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 product-price-wrap">
+                                                <div class="col-xs-6 product-list-price">
+                                                    <h3 class=""> $268.95</h3> </div>
+                                                <div class=" pull-right"> <a href="#customer" class="center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></a> <a href="#"><span class="product-rating">4.5</span> <span class="rating-divider"></span> </a><span class="badge rating-badge">42</span> </div>
+                                            </div>
+                                            <div col-xs-12 col-sm-12> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#" class="btn btn-danger info-btn "><span class=""></span> More Info</a> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#&wtb" class="btn btn-default pull-right add-to-cart-btn-fbt">Add to Cart</a> </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider hidden  visible-xs">&nbsp;</li>
+                                <li class="item   col-lg-2 col-md-3 col-sm-4 col-xs-12 hero-feature" style="z-index:999;">
+                                    <div class="product-page-thumbnail thumbnail" style="">
+                                        <div class="thumbnail-border-fbt" style="">
+                                        <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
+                                        <div class="caption product-caption" style="">
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label"> Choose </h3>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 product-price-wrap">
+                                                <div class="col-xs-6 product-list-price">
+                                                    <h3 class=""> $268.95</h3> </div>
+                                                <div class=" pull-right"> <a href="#customer" class="center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></a> <a href="#"><span class="product-rating">4.5</span> <span class="rating-divider"></span> </a><span class="badge rating-badge">42</span> </div>
+                                            </div>
+                                            <div col-xs-12 col-sm-12> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#" class="btn btn-danger info-btn "><span class=""></span> More Info</a> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#&wtb" class="btn btn-default pull-right add-to-cart-btn-fbt">Add to Cart</a> </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider hidden  visible-xs">&nbsp;</li>
+                                <li class="item   col-lg-2 col-md-3 col-sm-4 col-xs-12 hero-feature" style="z-index:999;">
+                                    <div class="product-page-thumbnail thumbnail" style="">
+                                        <div class="thumbnail-border-fbt" style="">
+                                        <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
+                                        <div class="caption product-caption" style="">
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label"> Choose </h3>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 product-price-wrap">
+                                                <div class="col-xs-6 product-list-price">
+                                                    <h3 class=""> $268.95</h3> </div>
+                                                <div class=" pull-right"> <a href="#customer" class="center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></a> <a href="#"><span class="product-rating">4.5</span> <span class="rating-divider"></span> </a><span class="badge rating-badge">42</span> </div>
+                                            </div>
+                                            <div col-xs-12 col-sm-12> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#" class="btn btn-danger info-btn "><span class=""></span> More Info</a> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#&wtb" class="btn btn-default pull-right add-to-cart-btn-fbt">Add to Cart</a> </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider hidden  visible-xs">&nbsp;</li>
+                                <li class="item   col-lg-2 col-md-3 col-sm-4 col-xs-12 hero-feature" style="z-index:999;">
+                                    <div class="product-page-thumbnail thumbnail" style="">
+                                        <div class="thumbnail-border-fbt" style="">
+                                        <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
+                                        <div class="caption product-caption" style="">
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label">Choose Your Own Adventure - Wacky Friends 3 Book Set </h3>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 product-price-wrap">
+                                                <div class="col-xs-6 product-list-price">
+                                                    <h3 class=""> $268.95</h3> </div>
+                                                <div class=" pull-right"> <a href="#customer" class="center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></a> <a href="#"><span class="product-rating">4.5</span> <span class="rating-divider"></span> </a><span class="badge rating-badge">42</span> </div>
+                                            </div>
+                                            <div col-xs-12 col-sm-12> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#" class="btn btn-danger info-btn "><span class=""></span> More Info</a> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#&wtb" class="btn btn-default pull-right add-to-cart-btn-fbt">Add to Cart</a> </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider hidden  visible-xs">&nbsp;</li>
+                                <li class="item   col-lg-2 col-md-3 col-sm-4 col-xs-12 hero-feature" style="z-index:999;">
+                                    <div class="product-page-thumbnail thumbnail" style="">
+                                        <div class="thumbnail-border-fbt" style="">
+                                        <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
+                                        <div class="caption product-caption" style="">
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label"> Choose </h3>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 product-price-wrap">
+                                                <div class="col-xs-6 product-list-price">
+                                                    <h3 class=""> $268.95</h3> </div>
+                                                <div class=" pull-right"> <a href="#customer" class="center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></a> <a href="#"><span class="product-rating">4.5</span> <span class="rating-divider"></span> </a><span class="badge rating-badge">42</span> </div>
+                                            </div>
+                                            <div col-xs-12 col-sm-12> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#" class="btn btn-danger info-btn "><span class=""></span> More Info</a> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#&wtb" class="btn btn-default pull-right add-to-cart-btn-fbt">Add to Cart</a> </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider hidden  visible-xs">&nbsp;</li>
+                                <li class="item   col-lg-2 col-md-3 col-sm-4 col-xs-12 hero-feature" style="z-index:999;">
+                                    <div class="product-page-thumbnail thumbnail" style="">
+                                        <div class="thumbnail-border-fbt" style="">
+                                        <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
+                                        <div class="caption product-caption" style="">
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label"> Choose Your Own Adventure - Wacky Friends 3 Book Set </h3>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 product-price-wrap">
+                                                <div class="col-xs-6 product-list-price">
+                                                    <h3 class=""> $268.95</h3> </div>
+                                                <div class=" pull-right"> <a href="#customer" class="center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></a> <a href="#"><span class="product-rating">4.5</span> <span class="rating-divider"></span> </a><span class="badge rating-badge">42</span> </div>
+                                            </div>
+                                            <div col-xs-12 col-sm-12> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#" class="btn btn-danger info-btn "><span class=""></span> More Info</a> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#&wtb" class="btn btn-default pull-right add-to-cart-btn-fbt">Add to Cart</a> </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider hidden  visible-xs">&nbsp;</li>
+                                <li class="item   col-lg-2 col-md-3 col-sm-4 col-xs-12 hero-feature" style="z-index:999;">
+                                    <div class="product-page-thumbnail thumbnail" style="">
+                                        <div class="thumbnail-border-fbt" style="">
+                                        <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
+                                        <div class="caption product-caption" style="">
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label"> Choose Your Own Adventure - Wacky Friends 3 Book - Wacky Friends 3 Book Set </h3>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 product-price-wrap">
+                                                <div class="col-xs-6 product-list-price">
+                                                    <h3 class=""> $268.95</h3> </div>
+                                                <div class=" pull-right"> <a href="#customer" class="center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></a> <a href="#"><span class="product-rating">4.5</span> <span class="rating-divider"></span> </a><span class="badge rating-badge">42</span> </div>
+                                            </div>
+                                            <div col-xs-12 col-sm-12> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#" class="btn btn-danger info-btn "><span class=""></span> More Info</a> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#&wtb" class="btn btn-default pull-right add-to-cart-btn-fbt">Add to Cart</a> </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider hidden  visible-xs">&nbsp;</li>
+                                <li class="item   col-lg-2 col-md-3 col-sm-4 col-xs-12 hero-feature" style="z-index:999;">
+                                    <div class="product-page-thumbnail thumbnail" style="">
+                                        <div class="thumbnail-border-fbt" style="">
+                                        <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
+                                        <div class="caption product-caption" style="">
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label"> Choose </h3>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 product-price-wrap">
+                                                <div class="col-xs-6 product-list-price">
+                                                    <h3 class=""> $268.95</h3> </div>
+                                                <div class=" pull-right"> <a href="#customer" class="center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></a> <a href="#"><span class="product-rating">4.5</span> <span class="rating-divider"></span> </a><span class="badge rating-badge">42</span> </div>
+                                            </div>
+                                            <div col-xs-12 col-sm-12> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#" class="btn btn-danger info-btn "><span class=""></span> More Info</a> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#&wtb" class="btn btn-default pull-right add-to-cart-btn-fbt">Add to Cart</a> </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider hidden  visible-xs">&nbsp;</li>
+                                <li class="item   col-lg-2 col-md-3 col-sm-4 col-xs-12 hero-feature" style="z-index:999;">
+                                    <div class="product-page-thumbnail thumbnail" style="">
+                                        <div class="thumbnail-border-fbt" style="">
+                                        <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
+                                        <div class="caption product-caption" style="">
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label"> Wacky Friends 3 Book </h3>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 product-price-wrap">
+                                                <div class="col-xs-6 product-list-price">
+                                                    <h3 class=""> $268.95</h3> </div>
+                                                <div class=" pull-right"> <a href="#customer" class="center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></a> <a href="#"><span class="product-rating">4.5</span> <span class="rating-divider"></span> </a><span class="badge rating-badge">42</span> </div>
+                                            </div>
+                                            <div col-xs-12 col-sm-12> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#" class="btn btn-danger info-btn "><span class=""></span> More Info</a> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#&wtb" class="btn btn-default pull-right add-to-cart-btn-fbt">Add to Cart</a> </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider hidden  visible-xs">&nbsp;</li>
+                                <li class="item   col-lg-2 col-md-3 col-sm-4 col-xs-12 hero-feature" style="z-index:999;">
+                                    <div class="product-page-thumbnail thumbnail" style="">
+                                        <div class="thumbnail-border-fbt" style="">
+                                        <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
+                                        <div class="caption product-caption" style="">
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label">  Choose Your Own Adventure </h3>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 product-price-wrap">
+                                                <div class="col-xs-6 product-list-price">
+                                                    <h3 class=""> $268.95</h3> </div>
+                                                <div class=" pull-right"> <a href="#customer" class="center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></a> <a href="#"><span class="product-rating">4.5</span> <span class="rating-divider"></span> </a><span class="badge rating-badge">42</span> </div>
+                                            </div>
+                                            <div col-xs-12 col-sm-12> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#" class="btn btn-danger info-btn "><span class=""></span> More Info</a> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#&wtb" class="btn btn-default pull-right add-to-cart-btn-fbt">Add to Cart</a> </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider hidden  visible-xs">&nbsp;</li>
+                                <li class="item   col-lg-2 col-md-3 col-sm-4 col-xs-12 hero-feature" style="z-index:999;">
+                                    <div class="product-page-thumbnail thumbnail" style="">
+                                        <div class="thumbnail-border-fbt" style="">
+                                        <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
+                                        <div class="caption product-caption" style="">
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label">  Choose Your Own Adventure - Wacky Friends 3 Book - Wacky Friends 3 Book Set </h3>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 product-price-wrap">
+                                                <div class="col-xs-6 product-list-price">
+                                                    <h3 class=""> $268.95</h3> </div>
+                                                <div class=" pull-right"> <a href="#customer" class="center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></a> <a href="#"><span class="product-rating">4.5</span> <span class="rating-divider"></span> </a><span class="badge rating-badge">42</span> </div>
+                                            </div>
+                                            <div col-xs-12 col-sm-12> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#" class="btn btn-danger info-btn "><span class=""></span> More Info</a> <a href="/product_catalog/product_page.cfm?sku=#parent_sku#&wtb" class="btn btn-default pull-right add-to-cart-btn-fbt">Add to Cart</a> </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider hidden  visible-xs">&nbsp;</li>
+                                <li class="item   col-lg-2 col-md-3 col-sm-4 col-xs-12 hero-feature" style="z-index:999;">
+                                    <div class="product-page-thumbnail thumbnail" style="">
+                                        <div class="thumbnail-border-fbt" style="">
+                                        <a href="/product_catalog/product_page.cfm?sku=#parent_sku#"><img class="" src="images/www001.jpg"></a>
+                                        <div class="caption product-caption" style="">
+                                            <div class="product-label-wrap">
+                                                <h3 class="product-catalog-label"> Choose </h3>
+                                            </div>
                                             <div class="col-xs-12 col-sm-12 product-price-wrap">
                                                 <div class="col-xs-6 product-list-price">
                                                     <h3 class=""> $268.95</h3> </div>
@@ -546,6 +946,7 @@
                                 </li>
                                 <li class="divider hidden  visible-xs">&nbsp;</li>
                                 
+                              
                             </ul>
                         </div>
                     </div>
