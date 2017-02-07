@@ -327,6 +327,7 @@
                     </div>
                     </div>
                     <div class="clearfix visible-xs"></div>
+<!--
                     <div class="col-sm-12" style="">
                         <p class="short-product-p">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac iaculis eros. Nunc at erat diam. Cras fermentum elit et sem tempor tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac iaculis eros. Nunc at erat diam. Cras fermentum elit et sem tempor tempus.
@@ -334,6 +335,7 @@
                         </p>
                     
                     </div>
+-->
                     <div class="col-sm-12 options-container" style="">
                         <div class="col-xs-12 options-wrap btn-group" data-toggle="buttons" style="">
                             <h3>Color:</h3>
@@ -418,7 +420,6 @@
         <row>
             <ul id="myTab" class="nav nav-tabs" style="">
                 <li class="active"><a href="#home" data-toggle="tab" style="display:block;">Product Description<span class="visible-xs pull-right">+</span></a></li>
-                <li ><a href="#profile" data-toggle="tab" style="display:block;">Age &amp; Gender Usage<span class="visible-xs pull-right">+</span></a></li>
                 <li ><a href="#product-specification" data-toggle="tab" style="display:block;">Product Specification<span class="visible-xs pull-right">+</span></a></li>
                 <li id="customer"><a href="#customer-reviews" data-toggle="tab" style="display:block;">Customer Reviews<span class="visible-xs pull-right">+</span></a></li>
             </ul>
@@ -428,12 +429,6 @@
     <div id="myTabContent" class="tab-content" >
         <div class="tab-pane fade in active" id="home">
             <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
-        </div>
-        <div class="tab-pane fade" id="profile">
-            <p>Light Blue - is a next generation admin template based on the latest Metro design. There are few reasons we want to tell you, why we have created it:
-                We didn't like the darkness of most of admin templates, so we created this light one. We didn't like the high contrast of most of admin templates, so we created this unobtrusive one.
-                We searched for a solution of how to make widgets look like real widgets, so we decided that deep background - is what makes widgets look real.</p>
-            <button class="btn btn-lg btn-primary">Button with click event attached</button>
         </div>
         <div class="tab-pane fade" id="product-specification">
             <p>Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
@@ -541,11 +536,28 @@
         
         </div>
 </div>
+                
+                
+    <div id="tabs-2" class="container product-tab-container">
+        <row>
+            <ul id="myTab-2" class="nav nav-tabs" style="">
+                <li class="active"><a href="#profile" data-toggle="tab" style="display:block;">Age &amp; Gender Usage<span class="visible-xs pull-right">+</span></a></li>
+            </ul>
+        </row>
+    </div>
+    <div class="container tabs-content-container" style="">
+        <div id="myTabContent-2" class="tab-content" >
+            <div class="tab-pane fade" id="profile">
+                <p>Light Blue - is a next generation admin template based on the latest Metro design. There are few reasons we want to tell you, why we have created it:
+                    We didn't like the darkness of most of admin templates, so we created this light one. We didn't like the high contrast of most of admin templates, so we created this unobtrusive one.
+                    We searched for a solution of how to make widgets look like real widgets, so we decided that deep background - is what makes widgets look real.</p>
+                <button class="btn btn-lg btn-primary">Button with click event attached</button>
+            </div>
         </div>
     </div>
+            
+            
         
-        </div>
-
         
 
 
@@ -949,6 +961,7 @@
 <!-- Tab Collapse -->
 <script type="text/javascript">
    $('#myTab').tabCollapse();
+     $('#myTab-2').tabCollapse();
 </script>
 <!-- /Tab Collapse -->
                 

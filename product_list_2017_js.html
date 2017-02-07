@@ -251,69 +251,484 @@
                 <div>
                     <!-- LEFT FILTER PANEL  -->
                     <div class="pull-left col-lg-2 col-md-3 col-sm-4 col-xs-12 left-filter-panel-container" id="" >
-                        <button  type="button" id="filter-toggle-button" class="filter-button navbar-toggle collapsed" data-toggle="collapse" data-target="#filters-wrap"> Filter <i class="more-less glyphicon hidden-sm hidden-md hidden-lg glyphicon-plus pull-right"></i></button>
+                        <button  type="button" id="filter-toggle-button" class="filter-button navbar-toggle collapsed" data-toggle="collapse" data-target="#filters-wrap"> Filter <i class="  glyphicon hidden-sm hidden-md hidden-lg glyphicon-plus pull-right"></i></button>
                         <div class="navbar-collapse collapse " style="" id="filters-wrap">
                             
                             <div class="filters-content" style="">
                                     <div class="panel-group" id="accordian">
-                                        <div class="panel panel-default ">
+                                        <div class="panel panel-default">
                                             <div class="panel-heading filter-panel-heading-fbt">
                                                 <h4 class="panel-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion" class="filter-toggle-label-fbt" href="#collapse_1">Price<i class="more-less glyphicon glyphicon-minus pull-right"></i>
-                                                    </a>
-                                                </h4> 
-                                            </div>
-                                            <div id="collapse_1" class="panel-collapse collapse in list-group">
-                                                    <div class="panel-body">
-                                                        <div id="slider_outer">
-                                                            <div style="padding: 0 13px;">
-                                                                <div id="slider-range-price" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
-                                                                    <div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 100%;"></div>
-                                                                    <a class="ui-slider-handle ui-state-default ui-corner-all" href="##" style="left: 0%;"></a>
-                                                                    <a class="ui-slider-handle ui-state-default ui-corner-all" href="##" style="left: 100%;"></a>
-                                                                </div>
+                                        <a data-toggle="collapse" data-parent="#accordion" class=" collapsed filter-toggle-label-fbt" href="#collapse_2">
+                                            Price<i class="more-less glyphicon glyphicon-minus pull-right"></i>
+                                        </a>
+                                    </h4> </div>
+                                            <div id="collapse_2" class="panel-collapse collapse in list-group filter-lister-group-fbt">
+                                                <div class="list-group-item">
+                                                    <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Under $10 <span class="badge filter-badge pull-right">2</span> </a>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> $10 to $20 <span class="badge filter-badge pull-right">15</span> </a>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> $20 to $50 <span class="badge filter-badge pull-right">50</span> </a>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> $50 to $100 <span class="badge filter-badge pull-right">15</span> </a>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> $100+ <span class="badge filter-badge pull-right">10</span> </a>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <div id="slider_outer">
+                                                        <div style="padding: 0 13px;">
+                                                            <div id="slider-range-price" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
+                                                                <div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 100%;"></div>
+                                                                <a class="ui-slider-handle ui-state-default ui-corner-all" href="##" style="left: 0%;"></a>
+                                                                <a class="ui-slider-handle ui-state-default ui-corner-all" href="##" style="left: 100%;"></a>
                                                             </div>
                                                         </div>
-                                                        <div class="price-slider-values input-group input-group-sm"> <span class="filter-currency input-group-addon">$</span>
-                                                            <input type="text" name="price_minimum" id="price_minimum" class="form-control" value="0"> <span class="filter-currency input-group-addon">$</span>
-                                                            <input type="text" name="price_maximum" id="price_maximum" class="form-control" value="350"> <span class="input-group-btn">
-                        <a id="price-filter-button" class="btn btn-sm btn-default" href="##" title="Search"><span class="glyphicon glyphicon-search"></span></a>
-                                                            </span>
-                                                        </div>
-                                                        <input value="##" type="hidden" id="price_slider_url" name="price_slider_url">
-                                                        <input value="0" type="hidden" id="init_price_minimum" name="init_price_minimum">
-                                                        <input value="350" type="hidden" id="init_price_maximum" name="init_price_maximum">
-                                                        <input value="10" type="hidden" id="step_value" name="step_value">
-                                                        <!--div class="filter-loader">&nbsp;</div-->
                                                     </div>
+                                                    <div class="price-slider-values input-group input-group-sm"> <span class="filter-currency input-group-addon">$</span>
+                                                        <input type="text" name="price_minimum" id="price_minimum" class="form-control" value="0"> <span class="filter-currency input-group-addon">$</span>
+                                                        <input type="text" name="price_maximum" id="price_maximum" class="form-control" value="350"> <span class="input-group-btn">
+                                                        <a id="price-filter-button" class="btn btn-sm btn-default" href="##" title="Search"><span class="glyphicon glyphicon-search"></span></a>
+                                                        </span>
+                                                    </div>
+                                                    <input value="##" type="hidden" id="price_slider_url" name="price_slider_url">
+                                                    <input value="0" type="hidden" id="init_price_minimum" name="init_price_minimum">
+                                                    <input value="350" type="hidden" id="init_price_maximum" name="init_price_maximum">
+                                                    <input value="10" type="hidden" id="step_value" name="step_value">
+                                                    <!--div class="filter-loader">&nbsp;</div-->
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                         <div class="panel panel-default">
+                                            <div class="panel-heading filter-panel-heading-fbt">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" class=" collapsed filter-toggle-label-fbt" href="#collapse_3">
+                                                        For BOYS by Age <i class="more-less glyphicon glyphicon-minus pull-right"></i>
+                                                    </a>
+                                                </h4> </div>
+                                            <div id="collapse_3" class="panel-collapse collapse in list-group filter-lister-group-fbt">
+                                                <div class="filter-scroll-fbt col-xs-12  pad-l-r-0 marg-btm-10">
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 1 <span class="badge filter-badge pull-right">2</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 2 <span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 3 <span class="badge filter-badge pull-right">50</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 4 <span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 5 <span class="badge filter-badge pull-right">10</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 6 <span class="badge filter-badge pull-right">2</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 7 <span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 8 <span class="badge filter-badge pull-right">50</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 9 <span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 10 <span class="badge filter-badge pull-right">10</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 11 <span class="badge filter-badge pull-right">2</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 12 <span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 13 <span class="badge filter-badge pull-right">50</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 14 <span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 15 <span class="badge filter-badge pull-right">10</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 16 <span class="badge filter-badge pull-right">2</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 17 <span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 18 <span class="badge filter-badge pull-right">50</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Men <span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 65 <span class="badge filter-badge pull-right">10</span> </a>
+                                                    </div>
+                                                 </div>
                                             </div>
                                         </div>
                                         <div class="panel panel-default">
                                             <div class="panel-heading filter-panel-heading-fbt">
                                                 <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" class=" collapsed filter-toggle-label-fbt" href="#collapse_2">
-                                            Price 2 <i class="more-less glyphicon glyphicon-minus pull-right"></i>
-                                        </a>
-                                    </h4> </div>
-                                            <div id="collapse_2" class="panel-collapse collapse in list-group filter-lister-group-fbt">
-                                                <div class="list-group-item">
-                                                    <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Under $10 <span class="badge pull-right">2</span> </a>
-                                                </div>
-                                                <div class="list-group-item">
-                                                    <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> $10 to $20 <span class="badge pull-right">15</span> </a>
-                                                </div>
-                                                <div class="list-group-item">
-                                                    <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> $20 to $50 <span class="badge pull-right">50</span> </a>
-                                                </div>
-                                                <div class="list-group-item">
-                                                    <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> $50 to $100 <span class="badge pull-right">15</span> </a>
-                                                </div>
-                                                <div class="list-group-item">
-                                                    <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> $100+ <span class="badge pull-right">10</span> </a>
-                                                </div>
+                                                    <a data-toggle="collapse" data-parent="#accordion" class=" collapsed filter-toggle-label-fbt" href="#collapse_4">
+                                                        For GIRLS by Age <i class="more-less glyphicon glyphicon-minus pull-right"></i>
+                                                    </a>
+                                                </h4> </div>
+                                            <div id="collapse_4" class="panel-collapse collapse in list-group filter-lister-group-fbt">
+                                                <div id="moreLess" class="filter-scroll-fbt col-xs-12  pad-l-r-0 marg-btm-10">
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 1 <span class="badge filter-badge pull-right">2</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 2 <span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 3 <span class="badge filter-badge pull-right">50</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 4 <span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 5 <span class="badge filter-badge pull-right">10</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 6 <span class="badge filter-badge pull-right">2</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 7 <span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 8 <span class="badge filter-badge pull-right">50</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 9 <span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 10 <span class="badge filter-badge pull-right">10</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 11 <span class="badge filter-badge pull-right">2</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 12 <span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 13 <span class="badge filter-badge pull-right">50</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 14 <span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 15 <span class="badge filter-badge pull-right">10</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 16 <span class="badge filter-badge pull-right">2</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 17 <span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 18 <span class="badge filter-badge pull-right">50</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Men <span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Age 65 <span class="badge filter-badge pull-right">10</span> </a>
+                                                    </div>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading filter-panel-heading-fbt">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" class=" collapsed filter-toggle-label-fbt" href="#collapse_5">
+                                                        Category <i class="more-less glyphicon glyphicon-minus pull-right"></i>
+                                                    </a>
+                                                </h4> </div>
+                                            <div id="collapse_5" class="panel-collapse collapse in list-group filter-lister-group-fbt">
+                                                <div id="" class="filter-scroll-fbt col-xs-12  pad-l-r-0 marg-btm-10">
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Active Play <span class="badge filter-badge pull-right">2</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>Brainteasers<span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>Games<span class="badge filter-badge pull-right">50</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>Kites, Planes &amp; Rockets<span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Office &amp; Desk Toys <span class="badge filter-badge pull-right">10</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>Playroom and Bedroom Furnishings<span class="badge filter-badge pull-right">2</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>STEM Toys<span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>Arts &amp; Crafts<span class="badge filter-badge pull-right">50</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>Building &amp; Construction<span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading filter-panel-heading-fbt">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" class=" collapsed filter-toggle-label-fbt" href="#collapse_5">
+                                                        Interest <i class="more-less glyphicon glyphicon-minus pull-right"></i>
+                                                    </a>
+                                                </h4> </div>
+                                            <div id="collapse_5" class="panel-collapse collapse in list-group filter-lister-group-fbt">
+                                                <div id="" class="filter-scroll-fbt col-xs-12  pad-l-r-0 marg-btm-10">
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Active Play <span class="badge filter-badge pull-right">2</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>Brainteasers<span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>Games<span class="badge filter-badge pull-right">50</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>Kites, Planes &amp; Rockets<span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Office &amp; Desk Toys <span class="badge filter-badge pull-right">10</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>Playroom and Bedroom Furnishings<span class="badge filter-badge pull-right">2</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>STEM Toys<span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>Arts &amp; Crafts<span class="badge filter-badge pull-right">50</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>Building &amp; Construction<span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading filter-panel-heading-fbt">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" class=" collapsed filter-toggle-label-fbt" href="#collapse_5">
+                                                        Brand <i class="more-less glyphicon glyphicon-minus pull-right"></i>
+                                                    </a>
+                                                </h4> </div>
+                                            <div id="collapse_5" class="panel-collapse collapse in list-group filter-lister-group-fbt">
+                                                <div id="" class="filter-scroll-fbt col-xs-12  pad-l-r-0 marg-btm-10">
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Active Play <span class="badge filter-badge pull-right">2</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>Brainteasers<span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>Games<span class="badge filter-badge pull-right">50</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>Kites, Planes &amp; Rockets<span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Office &amp; Desk Toys <span class="badge filter-badge pull-right">10</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>Playroom and Bedroom Furnishings<span class="badge filter-badge pull-right">2</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>STEM Toys<span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>Arts &amp; Crafts<span class="badge filter-badge pull-right">50</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>Building &amp; Construction<span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                         <div class="panel panel-default">
+                                            <div class="panel-heading filter-panel-heading-fbt">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" class=" collapsed filter-toggle-label-fbt" href="#collapse_5">
+                                                        Ratings <i class="more-less glyphicon glyphicon-minus pull-right"></i>
+                                                    </a>
+                                                </h4> </div>
+                                            <div id="collapse_5" class="panel-collapse collapse in list-group filter-lister-group-fbt">
+                                                <div id="" class="col-xs-12 marg-btm-10">
+                                                    <div class="review-progress-wrap"></div>
+                                                    <div class="pull-left">
+                                                        <div class="pull-left" style="width:35px; line-height:1;">
+                                                            <div style="" class="rev-progress-number">5 <span class="glyphicon glyphicon-star"></span></div>
+                                                        </div>
+                                                        <div class="pull-left" style="width:130px;">
+                                                            <div class="progress progress-fbt" style="">
+                                                              <div class="progress-bar progress-bar-fbt" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="5" style="width: 100%">
+                                                                <span class="sr-only">80% Complete (danger)</span>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pull-right rev-progress-qty" style="">1</div>
+                                                    </div>
+                                                    <div class="pull-left">
+                                                        <div class="pull-left" style="width:35px; line-height:1;">
+                                                            <div style="" class="rev-progress-number">4 <span class="glyphicon glyphicon-star"></span></div>
+                                                        </div>
+                                                        <div class="pull-left" style="width:130px;">
+                                                            <div class="progress progress-fbt" style="">
+                                                              <div class="progress-bar progress-bar-fbt" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="5" style="width: 80%">
+                                                                <span class="sr-only">80% Complete (danger)</span>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pull-right rev-progress-qty" style="">5</div>
+                                                    </div>
+                                                    <div class="pull-left">
+                                                        <div class="pull-left" style="width:35px; line-height:1;">
+                                                            <div style="" class="rev-progress-number">3 <span class="glyphicon glyphicon-star"></span></div>
+                                                        </div>
+                                                        <div class="pull-left" style="width:130px;">
+                                                            <div class="progress progress-fbt" style="">
+                                                              <div class="progress-bar progress-bar-fbt" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="5" style="width: 60%">
+                                                                <span class="sr-only">80% Complete (danger)</span>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pull-right rev-progress-qty" style="">4</div>
+                                                    </div>
+                                                    <div class="pull-left">
+                                                        <div class="pull-left" style="width:35px; line-height:1;">
+                                                            <div style="" class="rev-progress-number">2 <span class="glyphicon glyphicon-star"></span></div>
+                                                        </div>
+                                                        <div class="pull-left" style="width:130px;">
+                                                            <div class="progress progress-fbt" style="">
+                                                              <div class="progress-bar progress-bar-fbt" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="5" style="width: 40%">
+                                                                <span class="sr-only">80% Complete (danger)</span>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pull-right rev-progress-qty" style="">0</div>
+                                                    </div>
+                                                    <div class="pull-left">
+                                                        <div class="pull-left" style="width:35px; line-height:1;">
+                                                            <div style="" class="rev-progress-number">1 <span class="glyphicon glyphicon-star"></span></div>
+                                                        </div>
+                                                        <div class="pull-left" style="width:130px;">
+                                                            <div class="progress progress-fbt" style="">
+                                                              <div class="progress-bar progress-bar-fbt" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="5" style="width: 20%">
+                                                                <span class="sr-only">80% Complete (danger)</span>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pull-right rev-progress-qty" style="">0</div>
+                                                    </div>
+                                                    </div>
+                                                 </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                            <div class="panel-heading filter-panel-heading-fbt">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" class=" collapsed filter-toggle-label-fbt" href="#collapse_5">
+                                                        Country of Origin <i class="more-less glyphicon glyphicon-minus pull-right"></i>
+                                                    </a>
+                                                </h4> </div>
+                                            <div id="collapse_5" class="panel-collapse collapse in list-group filter-lister-group-fbt">
+                                                <div id="" class="filter-scroll-fbt col-xs-12  pad-l-r-0 marg-btm-10">
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Active Play <span class="badge filter-badge pull-right">2</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>Brainteasers<span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>Games<span class="badge filter-badge pull-right">50</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>Kites, Planes &amp; Rockets<span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Office &amp; Desk Toys <span class="badge filter-badge pull-right">10</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>Playroom and Bedroom Furnishings<span class="badge filter-badge pull-right">2</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>STEM Toys<span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>Arts &amp; Crafts<span class="badge filter-badge pull-right">50</span> </a>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span>Building &amp; Construction<span class="badge filter-badge pull-right">15</span> </a>
+                                                    </div>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading filter-panel-heading-fbt">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" class=" collapsed filter-toggle-label-fbt" href="#collapse_5">
+                                                        New Items <i class="more-less glyphicon glyphicon-minus pull-right"></i>
+                                                    </a>
+                                                </h4> </div>
+                                            <div id="collapse_5" class="panel-collapse collapse in list-group filter-lister-group-fbt">
+                                                <div id="" class="col-xs-12  pad-l-r-0 marg-btm-10">
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Yes <span class="badge filter-badge pull-right">2</span> </a>
+                                                    </div>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading filter-panel-heading-fbt">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" class=" collapsed filter-toggle-label-fbt" href="#collapse_5">
+                                                        Featured in Catalog <i class="more-less glyphicon glyphicon-minus pull-right"></i>
+                                                    </a>
+                                                </h4> </div>
+                                            <div id="collapse_5" class="panel-collapse collapse in list-group filter-lister-group-fbt">
+                                                <div id="" class="col-xs-12  pad-l-r-0 marg-btm-10">
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Yes <span class="badge filter-badge pull-right">2</span> </a>
+                                                    </div>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading filter-panel-heading-fbt">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" class=" collapsed filter-toggle-label-fbt" href="#collapse_5">
+                                                        At Retail Stores <i class="more-less glyphicon glyphicon-minus pull-right"></i>
+                                                    </a>
+                                                </h4> </div>
+                                            <div id="collapse_5" class="panel-collapse collapse in list-group filter-lister-group-fbt">
+                                                <div id="" class="col-xs-12  pad-l-r-0 marg-btm-10">
+                                                    <div class="list-group-item">
+                                                        <a href="##" class="filter-item-link "> <span class="glyphicon-lg unchecked"></span> Yes <span class="badge filter-badge pull-right">2</span> </a>
+                                                    </div>
+                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -321,7 +736,7 @@
                         <div class="">
                             <h1>Best Sellers</h1> </div>
 <!--                        <p class="category-image"><img src="./Magento Responsive Theme New Arrivals - Women - Fashion Ajax Bootstrap_files/plp-w-newarrivals_1.jpg" alt="New Arrivals" title="New Arrivals"></p>-->
-                     <div class="toolbar col-xs-12 col-sm-12 col-md-9  col-lg-10">
+                     <div class="toolbar col-xs-12 col-sm-8 col-md-9  col-lg-10">
                             <div class=" pull-left">
                                 <p class="navbar-text amount hidden-xs">
                                     <strong>Items 1 to 12 of 36 total</strong>
@@ -1160,7 +1575,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script>
+   <script>
         
         $( document ).ready(function() {
                 function toggleIcon(e) {
@@ -1172,10 +1587,11 @@
             $('.panel-group').on('hidden.bs.collapse', toggleIcon);
             $('.panel-group').on('shown.bs.collapse', toggleIcon);
         });
+       
         
     </script>
+        
     
-    <script src="js/masonry.pkgd.min.js"></script>
 </body>
 
 </html>
