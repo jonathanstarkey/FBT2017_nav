@@ -258,6 +258,22 @@ select {
     border:1px solid #e5e6e7;
 }
 
+/* Keeps Images Square*/
+.image-product-list{
+    position:relative;
+    overflow:hidden;
+    padding-bottom:calc(100% - 10px);
+}
+.image-product-list img{
+      position: absolute;
+      max-width: 100%;
+      max-height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+}
+/* ///Keeps Images Square*/
+
 .product-page-thumbnail {
     min-height: 100%!important;
     margin-bottom: 0px;
@@ -289,7 +305,7 @@ select {
  
 .product-catalog-label {    
     display: table-cell;
-    vertical-align: bottom;
+    vertical-align: middle;
     
     margin-top: 0px!important; 
     
@@ -412,7 +428,7 @@ select {
 /*    max-width: 215px;*/
     
     display: table-cell;
-    vertical-align: bottom;
+    vertical-align: middle;
     
     margin-top: 0px!important; 
     
