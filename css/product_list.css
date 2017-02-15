@@ -444,7 +444,7 @@ select {
 }
 
 @media (max-width: 1031px){
-.navbar-form {
+.navbar-form-filter-fbt {
     width: auto;
     border: 0;
     margin-left: 0;
