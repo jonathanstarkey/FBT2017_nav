@@ -6,7 +6,8 @@
 
 .toy-experts_cart,
 .topCheckoutSub,
-.productDescription {
+.productDescription,
+.toy-expert-ph-number {
     font-family: 'Roboto Slab', serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
@@ -75,17 +76,18 @@ div.expShippingForm,
 }
 
 .toy-experts_cart-wrap {
-    padding: 20px 20px;
+    padding: 0 20px 20px;
     
     text-align: right;
+    font-weight: 800;
+    color: #000000;
 }
 
 .toy-experts_cart {
    padding-bottom: 20px 0px;
     
     font-size: 1em;
-    font-weight: 800;
-    color: #000000;
+    
 }
 
 .toy-expert-ph-number {
@@ -716,6 +718,22 @@ div.expShippingForm {
     
 }
 
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+}
+
 div.shippingMethodContainer {
     display: inline-block;
     width: 50%;
@@ -853,12 +871,12 @@ span.purchase-btn-label-large {
 /*------- BEGIN THANK YOU FOR ORDER -------*/
 
 div.confirmThankYouParent {
-    padding: 20px 10px 0;
+/*    padding: 0 0 20px 0;*/
 }
 
 div.thankYouParent {
     font-weight: 800;
-    padding-bottom: 10px;
+/*    padding-bottom: 10px;*/
 }
 
 label.confirmThankYouLabel {
@@ -881,13 +899,14 @@ span.confirmEmail {
 
 /*------- BEGIN ACCOUNT CREATE -------*/
 
-div.confirmAccountParent {
-    padding: 0 10px;
-}
+
 
 div.confirmLabelParent {
-    margin-top: 10px;
-    
+    margin-top: 10px; 
+}
+
+.confirm-input{
+    margin-bottom: 0px!important;
 }
 
 /*------- END ACCOUNT CREATE -------*/
@@ -1024,7 +1043,7 @@ span.fa.fa-phone.fa-2x {
 @media (max-width: 768px) {
     
     .toy-experts_cart-wrap {
-        padding: 5px 20px;
+        padding: 5px 15px;
         text-align: right;
     }
     
@@ -1033,139 +1052,6 @@ span.fa.fa-phone.fa-2x {
     }
 }
 
-@media only screen and (max-width: 380px) {
-    a.checkout-btn {
-        width: 12em;
-    }
-    
-    span.checkout-btn-label {
-        font-size: .9em;
-    }
-    
-    p.dropbtnLabel {
-        font-size: .95em;
-    }
-
-    span.productTotalNotes {
-        font-size: 10px;
-    }
-}
-/*-------  END MEDIA QUERIES CART -------*/
-
-/*-------  BEGIN MEDIA QUERIES CHECKOUT -------*/
-
-@media only screen and (max-width: 380px) {
-    span.expDropbtnLabel {
-        padding-right: 10px;
-    }
-    
-    span.expShipTime{
-        font-size:12px;
-    }
-    
-    span.productTotalNotes {
-        font-size: 10px;
-    }
-}
-/*-------  BEGIN MEDIA QUERIES CHECKOUT -------*/
-
-@media only screen and (max-width: 360px) {
-   
-    a.checkout-btn {
-        width: 11em;
-    }
-    
-    span.checkout-btn-label {
-        font-size: .8em;
-    }
-    
-    p.dropbtnLabel {
-        font-size: .9em;
-    }
-    
-    .cc-parent {
-/*        width: 360px;*/
-    }
-    
-     .card_exp {
-        display: block;
-      
-    }
-    
-    .card_cvv {
-        display: block;
-        padding-top: 5px;
-        
-    }
-    
-     .dropdown-checkout {
-        padding: 0 0;
-    }
-    
-    form.couponForm {
-    margin-top: 0 auto;
-    
-}
-    
-    .dropdown-content {
-        margin-top: 0 auto;
-    }
-    
-}
-
-@media only screen and (max-width: 340px) {
-    
-   
-    
-    form.couponForm {
-        text-align: center;
-         margin-top: 0 auto;
-    }
-    
-    form.couponForm input {
-        display:block;
-        margin: 0 auto;
-        float: none;
-        text-align: center;
-    }
-   
-    a.checkout-btn {
-        width: 9.5em;
-    }
-   
-    .expDropbtnLabelParent {
-/*        width:200px;*/
-    }
-    
-    .expDropbtn {
-       height: 67px;
-    }
-    
-    .product-btn-cart {
-        width:80px;
-        margin: 0 atuo;
-/*
-        padding-left: 20px;
-        padding-top: 10px;
-*/
-        padding-bottom: 10px;
-    }
-    
-    span.checkout-btn-label {
-        font-size: 1em;
-        text-align: center;
-    }
-    
-    p.dropbtnLabel {
-        font-size: 1em;
-    }
-    
-    span.expShipTime{
-        display: block;
-/*        padding-left: 10px;*/
-    }
-    
-}
 
 
 /*------- END MEDIA QUERIES -------*/

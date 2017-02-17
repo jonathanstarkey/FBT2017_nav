@@ -277,236 +277,376 @@
     <div class="row">
         <div class="col-md-12 cart-back-to-nav-wrap">
             
-            <div class="col-md-6 col-md-push-6 toy-experts_cart-wrap">
-                <span class="toy-experts_cart ">Toy Experts Standing by at: <span class="toy-expert-ph-number">1-800-590-5987</span></span>
+            <div class="col-md-6 col-md-push-6 pad-l-r-0 toy-experts_cart-wrap">
+                <span class="toy-experts_cart ">Toy Experts Standing by at: </span><span class="toy-expert-ph-number">1-800-590-5987</span>
             
             </div>
             
             <div class="col-md-6 col-md-pull-6 checkoutNavLink-wrap">
                  <!-- // BEGIN BACK NAV -->
                         <a href="<cfoutput>#session.last_category_page#</cfoutput>" class="checkoutNavLink">
-                            <span class="glyphicon glyphicon-menu-left"></span> <span class="checkoutNavCopy">Back to Shopping</span>
+                            <span class="glyphicon glyphicon-menu-left"></span> <span class="checkoutNavCopy">Back to Cart</span>
                         </a>
                 <!-- // END BACK NAV -->
             </div>
-        
-        
         </div>
-        <div class="col-md-12">
         
-        
-        </div>
-        <div class="col-md-12 pad-l-r-0">
-            <div class="col-md-6 col-xs-5">
-                <div class="topCheckoutSub">
-                <div>
-                    <span>Est. total</span><span class="estimatedItems">(<span class="itemcount"4></span>4 Items)</span>
-                </div>
-                <div>
-                    <span class="topSubTotal" id="est_total">$99.99</span>
-                </div>
-            </div>
-            
-            </div>
-            <div class="col-md-6 col-xs-7 ">
-                 <div class="btmCheckoutSub">
-                    <button href="/smartphone/cart/checkout.cfm" type="button" class="btn secure-checkout-btn"><span class="glyphicon glyphicon-lock security pull-left"></span><span class="checkout-btn-label-large">Secure Checkout</span><span><img src="/images/ajax_load.png" border="0" style="padding-top:5px;display:none;" id="loader"></span></button>
-                </div>
-            
-            </div>
-        </div>
-        <div class="clearfix"></div>
-        
-        <div class="col-md-6 col-sm-12 col-md-push-6">
-            <div class="row">
-                 <div class="">
-                            <!-- // BEGIN SHIPPING FORM -->
-                        <div class="shippingContainer">
-                            <form class="shippingForm">
-                                <div class="shippingParent cartRuleBtm">
-                                    <div class="shippingLabel">
-                                        <input type="radio" name="shipping_method" value="Pick-Up,0.00,1 business days,1.2" class="shippingRadio radio" cost="0" >
-                                        <div class="shipMethodParent">
-                                            <span class="shippingMethod">Store Pickup</span><!--- <a id="change_store" style="cursor:pointer;">Change Store</a> --->
-                                        </div>
-                                        <div class="shipStatus">
-                                            <span class="shippingFree">free</span>
-                                        </div>
-                                    </div>
-                                    <p class="shippingCopy">Ship everything for free to my local store <br></b> <span id="shippingCity" style="font-weight:700;" store_id="21">in Omaha, NE Village Point</span></p>
-                                    <cfelseif store_check.store_id eq 26>
-                <!--					<p class="shippingCopy">Ship everything for free to my local store <br></b> <span id="shippingCity" style="font-weight:700;" store_id="26">in Overland Park, KS Prairie Fire</span></p>-->
-                                </div>
-                                </cfif>
-                                <div class="shippingParent">
-                                    <div class="shippingLabel ">
-                                        <input type="radio" name="shipping_method" value="03,3.99,1 business days,1.2" class="shippingRadio radio" cost="3.99">
-                                        <span class="shippingMethod">Shipping</span><span class="shippingFlatRate">$3.99 Flat Rate Shipping</span>
-                                    </div>
-                                    <p class="shippingCopy">Express shipping options available <br> in checkout</p>
-                                </div>
-                            </form>
-                        </div>
-                        <!-- // END SHIPPING FORM -->
-
-                                <div class="clearfix"></div>
-
-
-                         <!-- // BEGIN COUPON FORM -->
-                      
-                                <button class="dropbtn" data-toggle="collapse" data-target="#couponsDropdown">
-                                        <span class="dropbtnLabel" style="">Promo Code &amp; Gift Certificates </span>
-                                    <i class="glyphicon glyphicon-plus pull-right"></i>
-                                </button>
-                                <cfoutput>
-                                <div id="couponsDropdown" class=" collapse in">
-                                    <div style="min-height: 104px;">
-                                    <form class="couponForm col-md-12" >
-                                        <div class="col-md-9 col-xs-9">
-                                        <input type="text" name="discount_code" style="font-size: 1.1em; vertical-align: middle; " size="23"  placeholder="Promo Code" class="form-control textInput col-md-9" id="promo_code" value="">
-                                        </div>
-                                        <button type="button" value="ADD" class="btn coupon-btn col-md-3 col-xs-3" id="promo_add" style="font-size: 18px; vertical-align: middle;">ADD</button>
-                                    </form>
-                                        <div class="clearfix"></div>
-                                    <form class="couponForm couponForm3 " style="display:none;">
-                                        <input type="text" name="Key_Code" style="font-size: 1.1em; vertical-align: middle;" size="23" placeholder="Key Code (Yellow Box)" class="textInput" id="key_code" value="<cfif isdefined('session.cart.key_code')>#session.cart.key_code#</cfif>">
-                                    </form>
-                                        <div class="clearfix"></div>
-                                    <form class="couponForm couponForm3" style="display:none;">
-                                        <input type="text" name="customer_number" style="font-size: 1.1em; vertical-align: middle;" size="23" placeholder="Customer Number (Green Box)" class="textInput" id="customer_number" value="<cfif isdefined('session.cart.customer_number')>#session.cart.customer_number#</cfif>">
-                                    </form>
-                                    <div class="clearfix"></div>
-                                    <form class="couponForm couponForm2 col-md-12">
-                                        <div class="col-md-9 col-xs-9">
-                                        <input type="text" name="gift_certificate_number" style="font-size: 1.1em; vertical-align: middle;" size="23" placeholder="Gift Certificate" class="form-control textInput" id="gift_cert" value="">
-                                        </div>
-                                        <button type="button" value="ADD" class="btn coupon-btn col-md-3 col-xs-3" style="font-size: 18px; vertical-align: middle;" id="gift_cert_add">ADD</button>
-                                    </form>
-                                    </div>
-                                </div>
-                                </cfoutput>
-                      
-                        <!-- // END COUPON FORM -->
-                        </div>            
-            
-            </div>
-        </div>
-       
-    
-        <div class="col-md-6 col-sm-12 col-md-pull-6 ">
-            <!-- // BEGIN CART FORM -->
-
-        <div class="cartParent col-sm-12 pad-l-r-0">
-            <div class="cartContainer">
-                <!-- // BEGIN PRODUCT CONTAINER -->
-
-				<cfoutput query="pull_cart_items">
-                <div class="cartRuleTop productContainer" id="containter_#item_id#">
-                    <div class="cartLeft col-xs-4 col-sm-3">
-<!--						<cfif fileexists('#root_path#\fatbraintoys\images\products\swatches\small\#sku#.jpg')>-->
-                            <img class="img-responsive center-block" src="http://placehold.it/60x60">
-                        
-<!--                            <cfelse><img src="http://placehold.it/60x60" width="60" height="60" style="padding-bottom:5px;" border="0" valign="middle"></cfif>-->
-                        <!--- <img src="/images/products/swatches/small/#sku#.jpg" alt="product" height="60" width="60"> --->
+         <!-- // BEGIN ACCOUNT FORM -->
+         <div class="col-md-6 col-sm-12 checkout-form-container">
+    <div id="login_form" class="accountLoginContainer col-xs-12 pad-l-r-0">
+            <span class="accountLabel col-xs-8 col-sm-9">Your Account Login</span>
+            <a href="inline_content" type="button" value="SIGN IN" class="btn coupon-btn col-xs-4 col-sm-3" style="font-size: 18px; vertical-align: middle;">Sign In</a>		
+    </div>
 <!--
-                        <div class="addRemoveProduct input-group">
-                            <span></span>
-                            <button class="btn btn-default cartButton cbRemove" id="#item_id#"> - </button>
-                            <input type="text" name="##" style="font-size: 12px;" size="1" value="0" class="textInputCart" id="quantity_#item_id#" required="" disabled="true">
-                            <button class="input-group-btn cartButton" id="#item_id#"> + </button>
-                        </div>
+	<div id="logout_form" class="accountLoginContainer">
+		<a href="##" type="button" value="SIGN OUT" class="btn coupon-btn" style="font-size: 18px; vertical-align: middle;"<>Sign Out</a>
+	</div>
 -->
-                        
-                         <div class="input-group" style="width:90px; height: 30px; margin: 0 auto;">
-                          <span class="input-group-btn ">
-                            <button class="btn btn-default btn-number add-btn"  style="width:30px; height: 30px; padding: 0px; line-height: 1em;" type="button"  data-type="minus" data-field="quant[2]"><span class="glyphicon glyphicon-minus"></span></button>
-                          </span>
-                          <input type="text" name="quant[2]" class="form-control input-number" style=" height: 30px;" value="0" min="0" max="100">
-                            <span class="input-group-btn">
-                            <button class="btn btn-default btn-number add-btn" style="width:30px; height: 30px; padding: 0px; line-height: 1em;" type="button"  data-type="plus" data-field="quant[2]"><span class="glyphicon glyphicon-plus"></span></button>
-                        </div>
-                    </div>
-                    
-                    <div class="cartRight col-xs-8 col-sm-9">
-                        <a href="#prod_page#" class="skuNumber">sku: XXXXXXX</a>
-                        <a href="#prod_page#" class="productDescription">Product Name Here</a>
-                        <div class="price-wrap">
-                            <span class="skuOriginalPrice">$159.99</span>
-                            <span class="skuPrice">
-    <!--                            <cfif is_personalized eq 'yes'><font style="color:##E3731B">#personalization# </font></cfif>-->
 
-                                $129.99</span>
-                        </div>
-                    </div>
-                </div>
-				</cfoutput>
-                
-                <!-- // END PRODUCT CONTAINER -->
-            </div>
-        </div>
-        <!-- // END CART FORM -->
-         <!-- // BEGIN CART FORM -->
 
-        <div class="cartParent col-sm-12 pad-l-r-0">
-            <div class="cartContainer">
-                <!-- // BEGIN PRODUCT CONTAINER -->
+    <!-- // END ACCOUNT FORM -->
+    <!-- // BEGIN GUEST CHECKOUT FORM -->
 
-				<cfoutput query="pull_cart_items">
-                <div class="cartRuleTop productContainer" id="containter_#item_id#">
-                    <div class="cartLeft col-xs-4 col-sm-3">
-<!--						<cfif fileexists('#root_path#\fatbraintoys\images\products\swatches\small\#sku#.jpg')>-->
-                            <img class="img-responsive center-block" src="http://placehold.it/60x60">
-                        
-<!--                            <cfelse><img src="http://placehold.it/60x60" width="60" height="60" style="padding-bottom:5px;" border="0" valign="middle"></cfif>-->
-                        <!--- <img src="/images/products/swatches/small/#sku#.jpg" alt="product" height="60" width="60"> --->
+    <form class="guestCheckout" action="/smartphone/cart/review_order.cfm" id="mobile_form" method="post" >
 <!--
-                        <div class="addRemoveProduct input-group">
-                            <span></span>
-                            <button class="btn btn-default cartButton cbRemove" id="#item_id#"> - </button>
-                            <input type="text" name="##" style="font-size: 12px;" size="1" value="0" class="textInputCart" id="quantity_#item_id#" required="" disabled="true">
-                            <button class="input-group-btn cartButton" id="#item_id#"> + </button>
-                        </div>
+		<cfif structkeyexists(url,'error')>
+			<div style="color:red;font-weight:bold;font-size:22px;" align="center">
+			<cfif url.error eq 'ship_state'>
+			Select a Ship To State.
+			<cfelseif url.error eq 'bill_state'>
+			Select a Bill To State
+			<cfelseif url.error eq 'cvv'>
+			Please enter a Card CVV Code.
+			<cfelseif url.error eq 'exp'>
+			Please enter a Card Exp. Date.
+			<cfelseif url.error eq 'num'>
+			Please enter a Card Number.
+			<cfelseif url.error eq 'ship_1'>
+			Please Choose a Shipping Option.
+			</cfif>
+		</cfif>
+			</div>
 -->
-                        
-                         <div class="input-group" style="width:90px; height: 30px; margin: 0 auto;">
-                          <span class="input-group-btn ">
-                            <button class="btn btn-default btn-number add-btn"  style="width:30px; height: 30px; padding: 0px; line-height: 1em;" type="button"  data-type="minus" data-field="quant[2]"><span class="glyphicon glyphicon-minus"></span></button>
-                          </span>
-                          <input type="text" name="quant[2]" class="form-control input-number" style=" height: 30px;" value="0" min="0" max="100">
-                            <span class="input-group-btn">
-                            <button class="btn btn-default btn-number add-btn" style="width:30px; height: 30px; padding: 0px; line-height: 1em;" type="button"  data-type="plus" data-field="quant[2]"><span class="glyphicon glyphicon-plus"></span></button>
-                        </div>
-                    </div>
-                    
-                    <div class="cartRight col-xs-8 col-sm-9">
-                        <a href="#prod_page#" class="skuNumber">sku: XXXXXXX</a>
-                        <a href="#prod_page#" class="productDescription">Product Name Here</a>
-                        <div class="price-wrap">
-                            <span class="skuOriginalPrice">$159.99</span>
-                            <span class="skuPrice">
-    <!--                            <cfif is_personalized eq 'yes'><font style="color:##E3731B">#personalization# </font></cfif>-->
+        <div>
+            <label class="guestCheckoutLabel"><cfif isdefined('session.member_account_id')>Member<cfelse>Guest</cfif> Checkout</label>
+        </div>
+        <div class="addressFieldset" id="locationField">
+            <input type="text" name="bill_name" style="font-size:1em; vertical-align: middle;" size="27" placeholder="Full Name (First Name Last Name)" class="guestCheckoutInput col-xs-12 pad-l-r-0" id="bill_name" value="" tabindex="1">
+            <div class="clearfix"></div>
+            <div class="cartRuleTop"></div>
+           
+                <input type="text" name="bill_address1" style="font-size:1em; vertical-align: middle;" size="27" placeholder="Street Address" class="guestCheckoutInput shipAdressInput_1 col-xs-7 pad-l-r-0" id="bill_address1" value="">
+                <input type="text" name="bill_apt" style="font-size:1em; vertical-align: middle;" size="27" placeholder="| Apt/Bldg (optional)" class="guestCheckoutInput shipAdressInput_2 col-xs-5 pad-l-r-0" id="bill_apt" value="">
+            <div class="clearfix"></div>
+            <div class="cartRuleTop"></div>
+          
+                <input type="text" name="bill_city" style="font-size:1em; vertical-align: middle;" size="27" placeholder="City" class="guestCheckoutInput shipAdressInput_3 col-xs-6 col-lg-7 pad-l-r-0" id="bill_city"   value="">
+                <select  id="bill_states" class="col-xs-2 col-lg-1 pad-l-r-0 statesOption guestCheckoutInput" name="bill_state" tabindex="5">
+                    <option value="State">ST</option>
+                    <option value="AL">AL</option>
+                    <option value="AK">AK</option>
+                    <option value="AZ">AZ</option>
+                    <option value="AR">AR</option>
+					 <option value="AS">AS</option>
+                    <option value="CA">CA</option>
+                    <option value="CO">CO</option>
+                    <option value="CT">CT</option>
+                    <option value="DE">DE</option>
+                    <option value="DC">DC</option>
+                    <option value="FL">FL</option>
+					<option value="FM">FM</option>
+                    <option value="GA">GA</option>
+					 <option value="GU">GU</option>
+                    <option value="HI">HI</option>
+                    <option value="ID">ID</option>
+                    <option value="IL">IL</option>
+                    <option value="IN">IN</option>
+                    <option value="IA">IA</option>
+                    <option value="KS">KS</option>
+                    <option value="KY">KY</option>
+                    <option value="LA">LA</option>
+                    <option value="ME">ME</option>
+                    <option value="MD">MD</option>
+                    <option value="MA">MA</option>
+					<option value="MH">MH</option>
+                    <option value="MI">MI</option>
+                    <option value="MN">MN</option>
+                    <option value="MS">MS</option>
+                    <option value="MO">MO</option>
+                    <option value="MT">MT</option>
+                    <option value="NE">NE</option>
+                    <option value="NV">NV</option>
+                    <option value="NH">NH</option>
+                    <option value="NJ">NJ</option>
+                    <option value="NM">NM</option>
+                    <option value="NY">NY</option>
+                    <option value="NC">NC</option>
+                    <option value="ND">ND</option>
+                    <option value="OH">OH</option>
+                    <option value="OK">OK</option>
+                    <option value="OR">OR</option>
+                    <option value="PA">PA</option>
+					<option value="PR">PR</option>
+                    <option value="RI">RI</option>
+                    <option value="SC">SC</option>
+                    <option value="SD">SD</option>
+                    <option value="TN">TN</option>
+                    <option value="TX">TX</option>
+                    <option value="UT">UT</option>
+					 <option value="VA">VA</option>
+                    <option value="VT">VT</option>
+                    <option value="WA">WA</option>
+                    <option value="WV">WV</option>
+                    <option value="WI">WI</option>
+                    <option value="WY">WY</option>
+                </select>
 
-                                $129.99</span>
-                        </div>
-                    </div>
-                </div>
-				</cfoutput>
+                <input type="tel" name="bill_zip"  style="font-size:1em; vertical-align: middle;" size="27" placeholder="Zip" class="guestCheckoutInput col-xs-3 col-lg-4 pad-l-r-0" id="bill_zip" value="" tabindex="6">
+            <div class="clearfix"></div>
+            <div class="cartRuleTop"></div>
+			<input type="tel" pattern="[0-9\-\(\)\s]+" name="bill_phone" style="font-size:1em; vertical-align: middle;" size="27" placeholder="Phone" class="guestCheckoutInput col-xs-12 pad-l-r-0" id="bill_phone" value="" tabindex="7">
+			<div class="clearfix"></div>
+            <div class="cartRuleTop"></div>
+            <input type="text" name="bill_email" style="font-size:1em; vertical-align: middle;" size="27" placeholder="Email" class="guestCheckoutInput col-xs-12 pad-l-r-0" id="bill_email" value="" tabindex="8">
+            <div class="clearfix"></div>
+        </div>
+
+		<div id="card_load_up" align="center" class="col-xs-12 pad-l-r-0">
+			<div style="margin-top:7px;" align="left"><label class="guestCheckoutLabel">Use Card</label>
+				<!--- check to see if cards are already stripe cards if they are present them --->
+				<cfset is_stripe = 0>
+
+				<div align="center" id="cardContainer">
+					<cfif isdefined('session.cart.cards') and isdefined('session.member_account_id') >
+						<cftry>
+						<cfloop from="1" to="#arraylen(session.cart.cards)#" index="crd">
+							<cfset is_stripe = findnocase('card_',session.cart.cards[crd].card_id)>
+						</cfloop>
+						<!--- there is at least 1 card registered as stripe --->
+						<!--- <cfdump var="#session#"><cfabort> --->
+						<cfset tmp_selected = 0>
+						<cfif is_stripe gt 0>
+							<cfloop from="1" to="#arraylen(session.cart.cards)#" index="crd">
+								<cfif findnocase('card_',session.cart.cards[crd].card_id)>
+									<!--- Found Stripe Id Show Card --->
+									<!--- First if statement checks to see if a card has been selected if not default select the first stripe card --->
+									<!--- The second recognizes somewhere along the line this user has selected a card so it selects that card rather then defaulting --->
+<!--
+									<div class="stripe_card <cfif not len(trim(session.cart.stripe_card_id)) and tmp_selected eq 0>stripe_card_selected<cfset tmp_selected = 1></cfif><cfif trim(session.cart.stripe_card_id) eq trim(session.cart.cards[crd].card_id)>stripe_card_selected</cfif>" id="#session.cart.cards[crd].card_id#" array_loc="#crd#" style="float:left;">
+										#session.cart.cards[crd].bill_first_name# #session.cart.cards[crd].bill_last_name#<br>
+										Card Ending In: #listlast(session.cart.cards[crd].cardnumber,'-')#<br>
+										Expires: #session.cart.cards[crd].exp_month#/#session.cart.cards[crd].exp_year#
+									</div>
+-->
+								</cfif>
+							</cfloop>
+							
+						</cfif>
+						<cfcatch type="any">
+						<cfset is_stripe = 0>
+						</cfcatch>
+						</cftry>
+					</cfif>
+				</div>
+			</div>
+		</div>
+	
+		
+<!--		<div id="add_new_card" style="padding-top:7px;cursor:pointer;text-decoration:underline;color:blue;font-size:12px;margin-top:7px;<cfif is_stripe eq 0>display:none;</cfif>">+Add New Card</div>-->
+		<div id="new_card" style="<cfif is_stripe gt 0 and not structkeyexists(url,'edit_card')>display:none;</cfif>padding-top:7px;">
+			<table cellpadding="2" cellspacing="2" border="0" class="col-xs-12 col-sm-9 pad-l-r-0">
+				<tr class="cc-parent ">
+					<td id="card_success" class="col-xs-7 pad-l-r-0"><input name="card_number" type="tel" pattern="[0-9\-\(\)\s]+" maxlength="16" class="form-control credit-card-input input-text" id="card-number" placeholder="1234 5678 9012 3456" style="" value="<cfif isdefined('session.cart.card_number')>#session.cart.card_number#</cfif>" tabindex="9"></td>
+					<td class="card_exp" class="col-xs-3 pad-l-r-0" style="padding-left:7px;"><input name="card_exp" type="tel" pattern="[0-9\-\(\)\s]+" class="form-control form-control2"  id="card-exp" placeholder="MM/YY" maxlength="5" value="<cfif isdefined('session.cart.card_exp')>#session.cart.card_exp#</cfif>" tabindex="10"></td>
+					<td class="card_cvv" class="col-xs-2 pad-l-r-0" style="padding-left:7px;"><input name="card_cvv" type="tel" pattern="[0-9\-\(\)\s]+" class="form-control form-control3" maxlength="4"  id="card-cvv" placeholder="CVV" value="<cfif isdefined('session.cart.card_cvv')>#session.cart.card_cvv#</cfif>" tabindex="11"></td>
+				</tr>
+			</table>
+		</div>
+        <div class="clearfix"></div>
+		<script type="text/javascript">
+			$('##card_success').on('keyup',function(){
+				if($('##card_success').hasClass('has-success')){
+					$('##card-exp').focus();
+				}
+			});
+			
+			$('##card-exp').keyup(function(e){
+				if($.trim($('##card-exp').val()).length == 2){
+					if(e.keyCode != 8){//not backspace key
+						$('##card-exp').val($('##card-exp').val() + '/') 
+					}
+				}
+				if($.trim($('##card-exp').val()).length == 5){
+					$('##card-cvv').focus();
+				}
+			});
+		</script>
+    <!-- // END GUEST CHECKOUT FORM -->
+    <!-- // BEGIN ALT SHIPPING FORM -->
+     <div class="altShippingContainer">
+        <div class="altShippingParent">
+            <div class="altShippingCheckboxParent">
+
+                <label  class="altShippingCheckboxlabel">Use same information for shipping?</label>
                 
-                <!-- // END PRODUCT CONTAINER -->
+                <input type="checkbox" checked data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="altShipCheckbox" name="same_as">
+<!--
+				<cfif has_electronic gt 0>
+				<div align="left" style="margin-top:7px;background-color:##F7F7F7;">
+					<label class="guestCheckoutLabel">Name and Email for Digital Delivery</span></label>
+					<div style="border:1px solid ##c0c0c0;padding-left:-10px;">
+					<input type="text" name="ship_name" style="font-size:1em; vertical-align: middle;" size="27" placeholder="Full Name (First Name last Name)" class="guestCheckoutInput col-xs-12 pad-l-r-0" id="ship_name" value="" >
+                      <div class="clearfix"></div>
+                        <div class="cartRuleTop"></div>
+                    
+					<input type="text" name="ship_email" style="font-size:1em; vertical-align: middle;" size="27" placeholder="Email For Digital Delivery" class="guestCheckoutInput col-xs-12 pad-l-r-0" id="ship_email" value="" >
+                             <div class="clearfix"></div>
+                   
+					</div>
+				</div>
+				</cfif>
+-->
+				<cfif only_digital eq 0>
+	            <div id="collapseOne" class="altShippingAddress">
+                    <div style="margin-top:7px;" align="left"><label class="guestCheckoutLabel">Shipping Address</label></div>
+	                <div class="addressFieldset" style="background-color:##fffffff">
+						<cfif has_electronic eq 0>
+	                    <input type="text" name="ship_name" style="font-size:1em; vertical-align: middle;" size="27" placeholder="Full Name (First Name last Name)" class="guestCheckoutInput col-xs-12 pad-l-r-0" id="ship_name" value="" >
+                        <div class="clearfix"></div>
+                        <div class="cartRuleTop"></div>
+
+	                    </cfif>
+	                        <input type="text" name="ship_address1" style="font-size:1em; vertical-align: middle;" size="27" placeholder="Street Address" class="guestCheckoutInput shipAdressInput_1 col-xs-7 pad-l-r-0" id="ship_address1" value="" >
+	                        <input type="text" name="ship_apt" style="font-size:1em; vertical-align: middle;" size="27" placeholder="| Apt/Bldg (optional)" class="guestCheckoutInput shipAdressInput_2 col-xs-5 pad-l-r-0" id="ship_apt" value="">
+                            <div class="clearfix"></div>
+                        <div class="cartRuleTop"></div>
+                        
+                        
+							<div id="st">
+	                        <input type="text" name="ship_city" style="font-size:1em; vertical-align: middle;" size="27" placeholder="City" class="guestCheckoutInput shipAdressInput_3 col-xs-6 col-lg-7 pad-l-r-0" id="ship_city" value="" >
+	                        <select tabindex="2" name="ship_states" id="ship_states" class="statesOption guestCheckoutInput col-xs-2 col-lg-1 pad-l-r-0">
+	                            <option value="State">ST</option>
+	                             <option value="AL">AL</option>
+			                    <option value="AK">AK</option>
+			                    <option value="AZ">AZ</option>
+			                    <option value="AR">AR</option>
+								 <option value="AS">AS</option>
+			                    <option value="CA">CA</option>
+			                    <option value="CO">CO</option>
+			                    <option value="CT">CT</option>
+			                    <option value="DE">DE</option>
+			                    <option value="DC">DC</option>
+			                    <option value="FL">FL</option>
+								<option value="FM">FM</option>
+			                    <option value="GA">GA</option>
+								 <option value="GU">GU</option>
+			                    <option value="HI">HI</option>
+			                    <option value="ID">ID</option>
+			                    <option value="IL">IL</option>
+			                    <option value="IN">IN</option>
+			                    <option value="IA">IA</option>
+			                    <option value="KS">KS</option>
+			                    <option value="KY">KY</option>
+			                    <option value="LA">LA</option>
+			                    <option value="ME">ME</option>
+			                    <option value="MD">MD</option>
+			                    <option value="MA">MA</option>
+								<option value="MH">MH</option>
+			                    <option value="MI">MI</option>
+			                    <option value="MN">MN</option>
+			                    <option value="MS">MS</option>
+			                    <option value="MO">MO</option>
+			                    <option value="MT">MT</option>
+			                    <option value="NE">NE</option>
+			                    <option value="NV">NV</option>
+			                    <option value="NH">NH</option>
+			                    <option value="NJ">NJ</option>
+			                    <option value="NM">NM</option>
+			                    <option value="NY">NY</option>
+			                    <option value="NC">NC</option>
+			                    <option value="ND">ND</option>
+			                    <option value="OH">OH</option>
+			                    <option value="OK">OK</option>
+			                    <option value="OR">OR</option>
+			                    <option value="PA">PA</option>
+								<option value="PR">PR</option>
+			                    <option value="RI">RI</option>
+			                    <option value="SC">SC</option>
+			                    <option value="SD">SD</option>
+			                    <option value="TN">TN</option>
+			                    <option value="TX">TX</option>
+			                    <option value="UT">UT</option>
+								<option value="VA">VA</option>
+			                    <option value="VT">VT</option>
+			                    <option value="WA">WA</option>
+			                    <option value="WV">WV</option>
+			                    <option value="WI">WI</option>
+			                    <option value="WY">WY</option>
+	                        </select>
+	                        <input type="tel" pattern="[0-9\-\(\)\s]+" name="ship_zip" style="font-size:1em; vertical-align: middle;" size="27" placeholder="Zip" class="guestCheckoutInput shipAdressInput_5 col-xs-3 col-lg-4 pad-l-r-0" id="ship_zip" value="" >
+							</div>
+                            <div class="clearfix"></div>
+
+	                </div>
+	        	</div>
+				</cfif>
+        		</div>
+            </div>
+    </div>
+    <!-- // BEGIN ALT SHIPPING FORM -->
+    </div>
+    <div class="col-md-6 col-sm-12">
+    <!-- // BEGIN EXPRESS SHIPPING FORM -->
+	<cfif only_digital eq 0>
+    <div class="dropdown">
+        <div class="dropContainerCheck dropdown-checkout">
+            <button class="dropbtn ship-btn" data-toggle="collapse" data-target="#myDropdown">
+                <div class="col-xs-11 pad-l-r-0">
+                     <p class="expDropbtnLabel">Other Shipping Options<br>
+                         <span class="expShipTime">(Est. Delivery 01/08)</span></p>
+                    
+                </div>
+                   
+                <i class="glyphicon glyphicon-plus pull-right"></i>
+            </button> 
+            <div id="myDropdown" class=" collapse in">
+                <div style="min-height: 104px;">
+                <div class="expShippingForm" id="ship_form">
+                    <!-- // BEGIN EXPRESS SHIPPING CONTENT -->
+				<div align="center">
+                  <div style="width:150px;height:60px;padding-top:20px;" align="center">
+				 		<div style="float:left;"><span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></div><div style="float:left;">&nbsp;&nbsp;Loading Rates...
+						</div>
+				  </div>
+				</div>
+                    </div>
+                    <!-- // END EXPRESS SHIPPING CONTENT -->
+                </div>
             </div>
         </div>
-        <!-- // END CART FORM -->
-        
+    </div>
+	</cfif>
+    <!-- // END EXPRESS SHIPPING FORM -->
+    <!-- // BEGIN DISCOUNTS AND PROMOS CHECKBOX -->
+    <div class="checkboxDiscountContainer">
+        <div class="checkboxDiscountParent">
+            <label for="checkbox_Disconts" class="altShippingCheckboxlabel">Discounts & Promotions Opt In?</label>
+            <input type="checkbox" id="checkbox_Disconts" class="altDiscountCheckbox" name="opt_in" checked>
         </div>
+    </div>
+    <input type="hidden" name="stripe_customer_id" id="stripe_customer_id" value="<cfif isdefined('session.cart.stripe_cust_id')>#session.cart.stripe_cust_id#</cfif>">
+	<input type="hidden" name="bill_country" id="bill_country" value="<cfif isdefined('session.cart.cards[1].bill_country')>#session.cart.cards[1].bill_country#</cfif>">
+	<input type="hidden" name="stripe_card_id" id="stripe_card_id" value="#session.cart.stripe_card_id#">
 
-        <div class="clearfix"></div>
-        
-        <div class="col-md-6 col-sm-12 col-xs-12 pull-right">
-            <!-- // BEGIN BOTTOM CHECKOUT FORM -->
-		<cfoutput>
+    <!-- // END DISCOUNTS AND PROMOS CHECKBOX -->
+
+    <!-- // END GUEST CHECKOUT FORM -->
+    <cfparam name="bal" default="0">
+	<div class="cartRuleTop productContainer reviewCartContainer">
+        <!-- // BEGIN BOTTOM CHECKOUT FORM -->
         <div class="btmChecktContainer">
             <div class="btmChecktParent">
-				<div class="btmChecktProduct discounts" style="display:none;">
+                <div class="btmChecktProduct discounts" style="display:none;">
                     <span>Discounts</span><span class="btmProductTotal" id="disc"></span>
                 </div>
 				
@@ -524,26 +664,90 @@
                 </div>
                 <div class="col-xs-12 pad-l-r-0 ">
                  <div class="btmCheckoutSub">
-                    <button href="/smartphone/cart/checkout.cfm" type="button" class="btn secure-checkout-btn"><span class="glyphicon glyphicon-lock security pull-left"></span><span class="checkout-btn-label-large">Secure Checkout</span><span><img src="/images/ajax_load.png" border="0" style="padding-top:5px;display:none;" id="loader"></span></button>
+                    <button href="/smartphone/cart/checkout.cfm" type="button" class="btn secure-checkout-btn"><span class="glyphicon glyphicon-check security pull-left"></span><span class="checkout-btn-label-large">Review Order</span><span><img src="/images/ajax_load.png" border="0" style="padding-top:5px;display:none;" id="loader"></span></button>
                 </div>
             
             </div>
-                <div class="col-xs-12 pad-l-r-0 ">
-                 <div class="btmCheckoutSub ">
-                     <a href="tel:+18005905987,555 " 1*phonedigit class="btn secure-checkout-btn call-btn" style=""><span class="glyphicon glyphicon-phone security pull-left"></span><span class="checkout-btn-label-large">Call to Order!</span><span><img src="/images/ajax_load.png" border="0" style="padding-top:5px;display:none;" id="loader"></span></a>
+            </div>
+        </div>
+		 </form>
+		 
+		 <script>
+			  var placeSearch, bill_address1;
+			  var componentForm = {
+				street_number: 'short_name',
+				route: 'long_name',
+				locality: 'long_name',
+				administrative_area_level_1: 'short_name',
+				country: 'long_name',
+				postal_code: 'short_name'
+			  };
+			
+			  function initAutocomplete() {
+				// Create the autocomplete object, restricting the search to geographical
+				// location types.
+				bill_address1 = new google.maps.places.Autocomplete(
+					/** @type {!HTMLInputElement} */(document.getElementById('bill_address1')),
+					{types: ['geocode']});
+				bill_address1.addListener('place_changed', fillInAddress);
+			  }
+			
+			  function fillInAddress() {
+				var place = bill_address1.getPlace();
+
+				var bill_1 = ''
+				for (var i = 0; i < place.address_components.length; i++) {
+				  var addressType = place.address_components[i].types[0];
+					
+				  if (componentForm[addressType]) {
+					var loc_val = place.address_components[i][componentForm[addressType]];
+					if(addressType == 'street_number'){
+						bill_1 = loc_val;
+					}else if(addressType == 'route'){
+						bill_1 = bill_1 + ' ' + loc_val;
+					}else if(addressType == 'locality'){
+						$('##bill_city').val(loc_val);
+					}else if(addressType == 'administrative_area_level_1'){
+						$('##bill_states').val(loc_val);
+					}else if(addressType == 'country'){
+						//$('##bill_country').val(loc_val);
+					}else if(addressType == 'postal_code'){
+						$('##bill_zip').val(loc_val);
+					}
+				  }
+				}
+				$('##bill_address1').val(bill_1);
+				if ($('##checkbox_toggle').is(':checked')) {
+					set_ship_with_billto();
+				}
+			  }
+			  function geolocate() {
+				if (navigator.geolocation) {
+				  navigator.geolocation.getCurrentPosition(function(position) {
+					var geolocation = {
+					  lat: position.coords.latitude,
+					  lng: position.coords.longitude
+					};
+					var circle = new google.maps.Circle({
+					  center: geolocation,
+					  radius: position.coords.accuracy
+					});
+					bill_address1.setBounds(circle.getBounds());
+				  });
+				}
+			  }
+			</script>
+			 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPXmiA4PKS48rtMr7tJr8yzB_FjEOZXLQ&libraries=places&callback=initAutocomplete"
+				async defer></script>
+		  
+		 
+		<!--- <cfdump var="#session.cart#"> --->
+        <!-- // END BOTTOM CHECKOUT FORM -->
+                    </div>
                 </div>
                 </div>
             </div>
-        </div>
-		</cfoutput>
-        <!-- // END BOTTOM CHECKOUT FORM -->
-        </div>
-    </div>    
-</div>
-   
-
-</div>
-   <div class="clearfix"></div>          
+<!--   <div class="clearfix"></div>          -->
 <!--  FOOTER   -->
    
 
@@ -775,10 +979,14 @@
         
             <script type="text/javascript" src="js/owl.carousel.min.js"></script>
         
-         
+         <script> 
+        $(function () {
 
+           
+        });
 
-<!--            <script type="text/javascript" src="main.js"></script>-->
+</script>
+
 
 </body>
 
