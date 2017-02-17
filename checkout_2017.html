@@ -292,17 +292,16 @@
         </div>
         
          <!-- // BEGIN ACCOUNT FORM -->
-         <div class="col-md-6 col-sm-12 ">
-    <div id="login_form" class="accountLoginContainer">
-        <div class="cartRuleTop cartRuleBtm">
-            <span class="accountLabel">Your Account Login</span>
-            <a href="inline_content" value="SIGN IN" class="accountBtn inline cboxElement" style="font-size: 18px; vertical-align: middle;">Sign In</a>
-        </div>
-		
+         <div class="col-md-6 col-sm-12 checkout-form-container">
+    <div id="login_form" class="accountLoginContainer col-xs-12 pad-l-r-0">
+            <span class="accountLabel col-xs-9">Your Account Login</span>
+            <a href="inline_content" type="button" value="SIGN IN" class="btn coupon-btn col-xs-3" style="font-size: 18px; vertical-align: middle;">Sign In</a>		
     </div>
+<!--
 	<div id="logout_form" class="accountLoginContainer">
-		<a href="##" value="SIGN OUT" class="accountBtn" style="font-size: 18px; vertical-align: middle;"<>Sign Out</a>
+		<a href="##" type="button" value="SIGN OUT" class="btn coupon-btn" style="font-size: 18px; vertical-align: middle;"<>Sign Out</a>
 	</div>
+-->
 
 
     <!-- // END ACCOUNT FORM -->
@@ -645,42 +644,28 @@
         <!-- // BEGIN BOTTOM CHECKOUT FORM -->
         <div class="btmChecktContainer">
             <div class="btmChecktParent">
+                <div class="btmChecktProduct discounts" style="display:none;">
+                    <span>Discounts</span><span class="btmProductTotal" id="disc"></span>
+                </div>
+				
+				<div class="btmChecktProduct gift_cert">
+                    <span>Gift Certificate</span><span class="btmProductTotal" id="cert_val">$100.00</span>
+                </div>
                 <div class="btmChecktProduct">
-                    <span>Product Total<!--- <span class="productTotalNotes">&nbsp;(Including Coupons &amp; Certificates)</span> ---></span><span class="btmProductTotal">$#numberformat(session.cart.cart_price,"9,999.00")#<!--- #numberformat(session.cart.cart_price-disc_total-g_cert_total,"9,999.00")# ---></span>
+                    <span>Product Total<span class="productTotalNotes">&nbsp;(Including Coupons & Certificates)</span></span><span class="btmProductTotal" id="prod_total">$99.00</span>
                 </div>
                 <div class="btmChecktShipping">
-                    <span>Shipping</span><span class="btmChecktShipStatus">$#session.cart.ship_cost#</span>
+                    <span>Shipping</span><span class="btmChecktShipStatus">FLAT RATE via UPS Ground 3.99</span>
                 </div>
-				<cfif session.cart.disc_total gt 0>
-				<div class="btmChecktProduct">
-                    <span>Promotion Discount <span class="productTotalNotes">&nbsp;(<cfif session.cart.discount_code eq 'HH-8773'>Extra Credit<cfelse>#session.cart.discount_code#</cfif>)</span></span><span class="btmProductTotal">-$#numberformat(session.cart.disc_total, '9,999.99')#</span>
-                </div>
-				</cfif>
-				<cfif session.cart.TOTAL_CERTIFICATE_BALANCE gt 0>
-				<cfset pre_final_due = session.cart.cart_price+session.cart.ship_cost-session.cart.disc_total>
-				<cfif pre_final_due lt session.cart.total_certificate_balance>
-					<cfset bal = pre_final_due>
-				<cfelse>
-					<cfset bal = session.cart.total_certificate_balance>
-				</cfif>
-				<div class="btmChecktProduct">
-                    <span>Gift Certificate</span><span class="btmProductTotal">-$#numberformat(val(bal), '9,999.99')#</span>
-                </div>
-				</cfif>
                 <div class="btmChecktSubTotal">
-                    <span>Pre-Tax Sub Total <span>(#itemcount# Items)</span></span><span class="btmProductTotal" id="pretax">$#numberformat(session.cart.cart_price+val(session.cart.ship_cost)-val(session.cart.disc_total)-val(bal),"9,999.00")#</span>
+                    <span>Pre-Tax Sub Total <span>(<span class="itemcount">2</span> Items)</span></span><span class="btmProductTotal" id="preTaxTotal">$120.00</span>
                 </div>
-                <div class="btmCheckoutSub" align="center">
-                   <!---  <a href="##" class="checkout-btn-large"></span><span class="purchase-btn-label-large">Review Order</span></a> --->
-				   <div style="width:100%;">
-					   	<div style="width:90%;float:left;padding-left:20px;">
-						<input type="submit" value="Review Order" class="checkout-btn-large purchase-btn-label-large" style="width:90%" id="sub">
-						</div>
-						<div style="float:right;display:none;" id="sub_loader">
-						<img src="/images/ajax_load_blue.png" border="0" style="padding-top:3px;padding-right:8px;">
-						</div>
-					</div>
+                <div class="col-xs-12 pad-l-r-0 ">
+                 <div class="btmCheckoutSub">
+                    <button href="/smartphone/cart/checkout.cfm" type="button" class="btn secure-checkout-btn"><span class="glyphicon glyphicon-check security pull-left"></span><span class="checkout-btn-label-large">Review Order</span><span><img src="/images/ajax_load.png" border="0" style="padding-top:5px;display:none;" id="loader"></span></button>
                 </div>
+            
+            </div>
             </div>
         </div>
 		 </form>

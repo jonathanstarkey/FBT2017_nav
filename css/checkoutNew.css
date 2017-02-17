@@ -141,6 +141,10 @@ span.topSubTotal {
     line-height: 22px;
 }
 
+.secure-checkout-btn span.glyphicon-check {    
+    line-height: 21px;
+}
+
 .call-btn span.glyphicon-phone {
     line-height: 28px;
 }
@@ -478,10 +482,19 @@ span.skuOriginalPrice {
 }
 /*------- END CART -------*/
 
+/*------- CREDIT CARD -------*/
+
+.cc-parent input.form-control {
+    border: 1px solid #bbbbbb;
+    border-radius: 0px;
+}
+
+/*------- //CREDIT CARD -------*/
+
 /*------- BEGIN BOTTOM CHECKOUT FORM -------*/
 
 div.btmChecktContainer {
-    margin-bottom: 25px;
+/*    margin-bottom: 25px;*/
     background-color: #f2f2f2;
 }
 
@@ -546,15 +559,17 @@ div.btmCheckoutSub {
 
 /*------- BEGIN ACCOUNT LOGIN SECTION -------*/
 div.accountLoginContainer{
+/*
     margin-top: 10px;
     padding: 0 10px;  
+*/
     
     text-align: right;
 }
 
 span.accountLabel {
-    padding-right: 5px;
     font-weight: 800;
+    line-height: 38px;
 }
 
 a.accountBtn {
@@ -587,6 +602,10 @@ a.accountBtn:hover{
 /*------- END ACCOUNT LOGIN SECTION -------*/
 
 /*------- BEGIN GUEST CHECKOUT SECTION -------*/
+.checkout-form-container {
+    margin-bottom: 10px;
+}
+
 .guestCheckout {
     margin-top: 10px;
 }

@@ -1,5 +1,9 @@
 /* subscribe */
 
+footer {
+    margin-top: 15px; 
+}
+
 .container-subscribe {
     height: auto;
     background-color: #e9e9e9;
