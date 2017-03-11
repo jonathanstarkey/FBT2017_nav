@@ -1,0 +1,280 @@
+.navbar-nav-play a,
+.play-title-h1,
+.play-author,
+.footer-play-nav li a,
+.play-h2 {
+    font-family: 'Exo 2', sans-serif;
+}
+
+  { 
+    font-family: 'Roboto Slab', serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.play-body-p {
+    font-family: 'Roboto', Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+
+
+
+/*----- PLAY NAVBAR -----*/
+
+.navbar-play {
+    background-color: #336589;
+    border: 0px;
+    border-radius: 0px;
+    
+}
+
+.nav-bar-header-play {
+    height: 80px;
+}
+
+.nav-brand-play {
+    height: 80px;
+    margin: 0px;
+}
+
+.play-toggle {
+    margin-top: 18px!important;
+    margin-right: 18px!important;
+    padding: 11px 11px 34px;
+}
+
+.nav-brand-play img {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: auto;
+    height: 60px;
+}
+
+.navbar-nav-play li,
+.navbar-nav-play a {
+    height: 80px;
+}
+
+.navbar-nav-play a {
+    font-size: 1.6em;
+    font-weight: 600;
+    line-height: 48px!important;
+    color:#ffffff!important;
+    text-transform: uppercase;
+}
+
+.navbar-nav-play a:hover,
+.navbar-nav-play a:active,
+.navbar-nav-play a:focus {
+    color: #ffdb4a!important;
+}
+
+/*----- /PLAY NAVBAR -----*/
+
+
+/*----- PLAY HOMEPAGE BODY -----*/
+
+.img-play-blog {
+    width: 100%;
+    height: auto;
+}
+
+.play-title-h1{
+    margin-top: 10px;
+    
+     font-size: 2em;
+    font-weight: 600;
+    line-height: 1.2em;
+    color: #3c6997;
+}
+
+.play-title-h1.play-feature-h1{
+     font-size: 2.7em;
+    line-height: 1.2em;
+}
+
+.play-card-container {
+     min-height: 488px;
+}
+
+.play-post {
+    cursor: pointer;
+}
+
+.play-post:hover,
+.play-post:active,
+.play-post:focus {
+    text-decoration: none;
+}
+
+.play-title-h1.play-title-card{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+     overflow: hidden;
+    max-width: 730px;
+    max-height: 99px;
+    margin-top: 10px;
+    
+     font-size: 2em;
+    font-weight: 600;
+    line-height: 1.2em;
+    text-overflow: ellipsis;
+    color: #3c6997;
+}
+
+.play-author {
+    margin-bottom: 8px;
+    
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.3em;
+    color: #abaaad;
+}
+
+.play-author a {
+    font-weight: 300;
+    line-height: 1.3em;
+     text-decoration: none;
+    color: #5adbff;
+}
+
+.play-author a:hover,
+.play-author a:active,
+.play-author a:focus {
+   
+     text-decoration: underline;
+    color: #58595b;
+}
+
+
+.play-body-p.play-card-p {
+     display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+     overflow: hidden;
+    max-width: 730px;
+    height: 90px;
+    
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.4em;
+     text-overflow: ellipsis;
+   
+    color: #414042;
+}
+
+.play-read-me-btn {
+    width: 190px;
+}
+
+
+/*----- /PLAY HOMEPAGE BODY -----*/
+
+
+/*----- PLAY FOOTER -----*/
+.footer-row-play {
+    padding: 50px;
+}
+
+.footer-play-nav {
+    padding-left: 0px;
+}
+
+.footer-play-nav li {
+    list-style: none;
+}
+
+.footer-play-nav li a {
+    font-size: 2.7em;
+    font-weight: 300;
+    line-height: 1.8em;
+    color: #58595b;
+}
+
+.play-h2,
+.play-social li a i{
+    color: #58595b;
+}
+
+.play-h2 {
+    margin-top: 16px;
+    margin-bottom: 0px;
+    padding: 0px 0 10px;
+    font-size: 1.7em;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+.play-social li {
+    display: inline-block;
+    margin-right: 24px;
+    list-style: none;
+}
+
+.footer-play-nav li a:hover,
+.play-social li a i:hover,
+.footer-play-nav li a:active,
+.play-social li a i:active,
+.footer-play-nav li a:focus,
+.play-social li a i:focus{
+    color: #44af69;
+}
+
+.play-subscribe-form {
+    margin-top: 20px;
+    border-radius: 0px!important;
+    padding: 15px;
+    border: 1px solid #58595b!important;
+}
+
+
+
+
+/*----- /PLAY FOOTER -----*/
+
+/*----- MEDIA QUERIES -----*/
+
+
+
+@media (max-width: 991px){
+    .navbar-nav-play a {
+    font-size: 1.2em;
+    line-height: 48px!important;
+}
+}
+
+@media (max-width: 767px){
+    
+.footer-row-play {
+    padding: 20px;
+}
+    
+    .navbar-nav-play li {
+            
+        height: 40px;
+    }
+    
+    .navbar-nav-play a {
+        margin-left:15px;
+        height: 40px;
+        
+    font-size: 1.2em;
+    line-height: 1.2em!important;
+    
+}
+    
+}
+
+
+/*----- MEDIA QUERIES -----*/
+
+
+
+
+
+
+
+
+
+
+

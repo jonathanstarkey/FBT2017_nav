@@ -32,7 +32,8 @@
 
 .container-header {
     display: block;
-    height: 460px;
+    min-height: 380px;
+    max-height: 480px;
     
     padding: 20px 40px;
     
@@ -58,7 +59,10 @@
 }
 
 .container-a-row {
-/*    min-height: 440px;*/
+/*
+    min-height: 380px;
+    max-height: 480px;
+*/
     background: orange;
 }
 .bkgd-orange {
@@ -71,7 +75,8 @@
 
 .container-2-3rd-carousel {
     padding: 20px 20px;
-    height: 460px;
+    min-height: 380px;
+    max-height: 480px;
 /*    max-height: 440px;*/
     
     background: #ffffff;
@@ -81,7 +86,8 @@
     padding: 0px;
     overflow: hidden;
     
-    height: 460px;
+    min-height: 380px;
+    max-height: 480px;
 }
 
 .image-half-5050 {

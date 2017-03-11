@@ -271,299 +271,188 @@
         </div>
         <!--/.navbar -->
 
-        <!-- Begin page content -->
+        <!-- BEGIN PLAY NAV -->
+<nav class="navbar navbar-inverse navbar-play">
+  <div class="container-fluid">
+    <div class="navbar-header nav-bar-header-play">
+        <button type="button" class="navbar-toggle play-toggle" data-toggle="collapse" data-target=".play-nav-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand nav-brand-play" href="#">
+          <img class="img-responsive" src="images/play/play_logo.png"  alt=""></a>
+    </div>
+    <div class="collapse navbar-collapse play-nav-collapse">
+        <ul class="nav navbar-nav navbar-nav-play navbar-right">
+          <li class=""><a href="#" class="nav-tab-label">Parenting</a></li>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Special Needs</a></li>
+            <li><a href="#">Activities</a></li>
+        </ul>
+    </div>
+</nav>
+        <!-- /END PLAY NAV -->
 
-        <!-- HERO Carousel -->
-        <div id="myCarousel" class="carousel slide">
-              <!-- Indicators -->
-                <ol class="carousel-indicators">
-                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#myCarousel" data-slide-to="1"></li>
-                  <li data-target="#myCarousel" data-slide-to="2"></li>
-                  <li data-target="#myCarousel" data-slide-to="3"></li>
-                </ol>  
-                <!-- /Indicators -->
-              <div class="carousel-inner">
-                <div class="item hero_carousel_item active">
-                  <img class="hero_carousel_img" src="images/hero_1_sm.jpg" srcset="images/hero_1_sm.jpg 400w, images/hero_1_lg.jpg 900w">
-                  <div class="container">
-                    <div class="carousel-caption">
-                      <h1>Example headline.</h1>
-                      <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                      <a class="btn btn-large btn-primary" href="#">Sign up today</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="item hero_carousel_item">
-                  <img class="hero_carousel_img" src="images/hero_1.jpg" alt="">
-                  <div class="container">
-                    <div class="carousel-caption">
-                      <h1>Another example headline.</h1>
-                      <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                      <a class="btn btn-large btn-primary" href="#">Learn more</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="item hero_carousel_item">
-                  <img class="hero_carousel_img" src="images/hero_1.jpg" alt="">
-                  <div class="container">
-                    <div class="carousel-caption">
-                      <h1>One more for good measure.</h1>
-                      <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                      <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="item hero_carousel_item">
-                  <img class="hero_carousel_img" src="images/hero_1.jpg" alt="">
-                  <div class="container">
-                    <div class="carousel-caption">
-                      <h1>One more for good measure.</h1>
-                      <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                      <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-    <!--
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-          <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-    -->
-        </div><!-- /.carousel -->
-      
-       <style> 
     
-    ul.nav li.dropdown:hover ul.dropdown-menu { 
-	display:none; 
-	}
-    </style> 
-        
-        
-        <!-- Top Nav -->
-		<div class="navbar hidden-phone well well-small">
-			<div class="navbar-inner header-drop-nav">
-	  
-        <!-- 1st dropdown -->
-		<ul class="nav nav-tabs">
-			<li class="dropdown" >
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Browse by Destination <b class="caret"></b></a>
-			<ul class="dropdown-menu" >
-      <!--  1st Top Nav links -->
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li class="divider"></li>
-				<li class="nav-header">Nav header</li>
-				<li><a href="#">Separated link</a></li>
-				<li><a href="#">One more separated link</a></li>
-			</ul>
-			</li>
-		</ul>
-		
-		<!-- 2nd dropdown -->
-		<ul class="nav nav-tabs pull-middle">
-			<li class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Browse by Activity <b class="caret"></b></a>
-			<ul class="dropdown-menu">
-      <!-- 2nd Top Nav links -->
-			<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li class="divider"></li>
-				<li class="nav-header">Nav header</li>
-				<li><a href="#">Separated link</a></li>
-				<li><a href="#">One more separated link</a></li>
-			</ul>
-			</li>
-		</ul>
-		
-		<!-- 3rd dropdown -->
-		<ul class="nav nav-tabs">
-			<li class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Browse by Interest <b class="caret"></b></a>
-			<ul class="dropdown-menu">
-      <!-- 3rd Top Nav links -->
-			<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li class="divider"></li>
-				<li class="nav-header">Nav header</li>
-				<li><a href="#">Separated link</a></li>
-				<li><a href="#">One more separated link</a></li>
-			</ul>
-			</li>
-		</ul>
-		
-		<!-- 4th dropdown -->
-		<ul class="nav nav-tabs">
-			<li class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Special Offers <b class="caret"></b></a>
-			<ul class="dropdown-menu">
-      <!-- 4th Top Nav links -->
-			<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li class="divider"></li>
-				<li class="nav-header">Nav header</li>
-				<li><a href="#">Separated link</a></li>
-				<li><a href="#">One more separated link</a></li>
-			</ul>
-			</li>
-		</ul>
-		
-		<form class="navbar-form pull-right hidden-tablet">
-			<input class="span3" type="text" placeholder="Search">
-            <button type="submit" class="btn btn-primary">GoSeeDo</button>
-		</form>
-		
-			</div>
-		</div>
-        
-        
-<!-- Email Sign Up Alert -->
-        
-        <div class="alert alert-info alert-dismissable alert-email-sign-up">
-            
-            <a href="##" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-            <p class="text-center">
-            Sign up today for exclusive deals, discounts, &amp; Special offers! - <a href="##" class="click-here-a" data-toggle="modal" data-target="#email-sign-up">Click Here ></a>
-                </p>
-        </div>
-        
-<!-- /Email Sign Up Alert -->
 
-<!-- Container 2/3rds left  -->
-        <div class="container-fluid container-base container-a">
-            <div class="row container-a-row">
-                <a class="col-sm-4 col-md-4 container-header bkgd-orange">
-                    <h1 class="section-header-h1">Best<br> Selling<br> Toys<br> of 2016!</h1>
-                    <button type="button" class="btn btn-100 white-outline-btn btn-left">Best Sellers <i class="fa fa-chevron-right btn-chevron" aria-hidden="true"></i></button>
-                </a >
-                <!--  TWO THIRDS PRODUCT CAROUSEL  -->
-                <div class="col-sm-8 col-md-8 container-2-3rd-carousel">
-                    <!--PRODUCT SLIDER HEADER-->
-                    <div class="container-fluid">
-                      <div class="row" id="slider-text">
-                        <div class="col-md-6" >
-                          <h2 class="twoThirds-product-h2 pull-left">Latest <span class="twoThirds-product-h2-light">Toys</span></h2>
-                        </div>
-                      </div>
+<div class="container pad-l-r-0 play-body-container" style="">
+    <div class="row">
+        <!-----    Featured Article    ----->
+        <div class="col-sm-12 ">
+            <div class="post">
+                <div class="col-sm-12 pad-l-r-0 post-img-content">
+                    <img src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-play-blog img-responsive" />
+                </div>
+                <div class="clearfix"></div>
+                <div class="content">
+                    <h1 class="play-title-h1 play-feature-h1">
+                         Get Organized for the New Year with the Fat Brain Toys Birthday Club
+                    </h1>
+                    <div class="play-author  play-author-feature">
+                        <time datetime="2014-01-20">January 20th, 2014</time> | <a href="##">By: Fat Brain Toys</a> 
                     </div>
-                    <!-- PRODUCT SLIDER -->
-                    <div id="product-slider" class="container-fluid">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-12 product-carousel-col">
-                                <div class="owl-carousel product-slider">
-                                    <div>
-                                        <a href="#"><img class="lazyOwl" src="images/product/fa005_sm.jpg" srcset="images/product/fa005_sm.jpg 400w, images/product/fa005_lg.jpg 999w"></a>
-                                        <div class="product-slider-rule center-block"></div>
-                                      <h4 class="text-center">Acuity</h4>
-                                      <h5 class="text-center">Price: $19.95</h5>
-                                        <span class="text-center center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
-                                    </div>
-                                    <div>
-                                        <a href="#"><img class="lazyOwl" src="images/product/fa035_sm.jpg" srcset="images/product/fa035_lg.jpg 999w" class=""></a>
-                                        <div class="product-slider-rule center-block"></div>
-                                      <h4 class="text-center">AnimalLogic</h4>
-                                      <h5 class="text-center">Price: $19.95</h5>
-                                        <span class="text-center center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
-                                    </div>
-                                    <div>
-                                        <a href="#"><img class="lazyOwl" src="images/product/fa058_sm.jpg" srcset="images/product/fa058_lg.jpg 999w" class=""></a>
-                                        <div class="product-slider-rule center-block"></div>
-                                      <h4 class="text-center">Hexactly</h4>
-                                      <h5 class="text-center">Price: $19.95</h5>
-                                        <span class="text-center center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
-                                    </div>
-                                    <div>
-                                        <a href="#"><img sclass="lazyOwl" rc="images/product/fa061_sm.jpg" srcset="images/product/fa061_lg.jpg 999w" class=""></a>
-                                        <div class="product-slider-rule center-block"></div>
-                                      <h4 class="text-center">Building Blocks</h4>
-                                      <h5 class="text-center">Price: $19.95</h5>
-                                        <span class="text-center center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
-                                    </div>
-                                    <div>
-                                        <a href="#"><img class="lazyOwl" src="images/product/fa070_sm.jpg" srcset="images/product/fa070_lg.jpg 999w" class=""></a>
-                                        <div class="product-slider-rule center-block"></div>
-                                      <h4 class="text-center">Tobbles Neo</h4>
-                                      <h5 class="text-center">Price: $19.95</h5>
-                                        <span class="text-center center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
-                                    </div>
-                                    <div>
-                                        <a href="#"><img class="lazyOwl" src="images/product/fa074_sm.jpg" srcset="images/product/fa074_lg.jpg 999w" class=""></a>
-                                        <div class="product-slider-rule center-block"></div>
-                                      <h4 class="text-center">FOLD: Origami Brainteaser</h4>
-                                      <h5 class="text-center">Price: $19.95</h5>
-                                        <span class="text-center center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
-                                    </div>
-                                     <div>
-                                        <a href="#"><img class="lazyOwl" src="images/product/fa058_sm.jpg" srcset="images/product/fa058_lg.jpg 999w" class=""></a>
-                                        <div class="product-slider-rule center-block"></div>
-                                      <h4 class="text-center">Hexactly</h4>
-                                      <h5 class="text-center">Price: $19.95</h5>
-                                        <span class="text-center center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
-                                    </div>
-                                    <div>
-                                        <a href="#"><img class="lazyOwl" src="images/product/fa061_sm.jpg" srcset="images/product/fa061_lg.jpg 999w" class=""></a>
-                                        <div class="product-slider-rule center-block"></div>
-                                      <h4 class="text-center">Building Blocks</h4>
-                                      <h5 class="text-center">Price: $19.95</h5>
-                                        <span class="text-center center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
-                                    </div>
-                                    <div>
-                                        <a href="#"><img class="lazyOwl" src="images/product/fa070_sm.jpg" srcset="images/product/fa070_lg.jpg 999w" class=""></a>
-                                        <div class="product-slider-rule center-block"></div>
-                                      <h4 class="text-center">Tobbles Neo</h4>
-                                      <h5 class="text-center">Price: $19.95</h5>
-                                        <span class="text-center center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
-                                    </div>
-                                    <div>
-                                        <a href="#"><img class="lazyOwl" src="images/product/fa074_sm.jpg" srcset="images/product/fa074_lg.jpg 999w" class=""></a>
-                                        <div class="product-slider-rule center-block"></div>
-                                      <h4 class="text-center">FOLD: Origami Brainteaser</h4>
-                                      <h5 class="text-center">Price: $19.95</h5>
-                                        <span class="text-center center-block product-slider-review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
-                                    </div>
-                                  
-                                </div>
-                            </div>
-                      </div>
-                    </div>
-                    <!-- /PRODUCT SLIDER -->
+                    <p class="play-body-p play-feature-p">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                        unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
                     
+                    <div>
+                        <form class="" role="form" action="#" method="post">
+                   
+                    <div class=""><a href="##" class="btn btn-block btn-lg fbt-btn lt-grn-btn-fbt play-read-me-btn">Read More</a></div><!--5-->
+                </form>
                     </div>
-<!--  TWO THIRDS PRODUCT CAROUSEL  -->
-                    </div>
-                </div>
-            
-            
-<!--  /2/3rds left   -->
-        
-<!-- Giftbot Container -->
-        <div class="container-fluid container-base container-a">
-            <div class="row">
-                <div class="col-md-12 container-header bkgd-dk-grey">
-                    <h1 class="section-header-h1">Gift Bot</h1>
-                    <button type="button" class="btn btn-100 white-outline-btn btn-left">Go there Now! <i class="fa fa-chevron-right btn-chevron" aria-hidden="true"></i></button>
                 </div>
             </div>
         </div>
-<!-- /Giftbot Container -->
+        <!-----    /Featured Article    ----->
         
-<!-- Container 5050   -->
-        <div class="container-fluid container-base container-a">
-            <div class="row">
-                <a class="col-sm-6 col-md-6 image-half-5050-container" style="height: 400px; background:url(./images/hero_1_lg.jpg) no-repeat center; background-size: cover;">
-<!--                    <img src="images/hero_1_lg.jpg" class="image-half-5050 img-responsive portfolio-item">-->
-                </a>
-                <a class="col-sm-6 col-md-6 container-header bkgd-orange">
-                    <h1 class="section-header-h1">Indoor Toys<br> For Active<br> Kids!</h1>
-                    <button type="button" class="btn btn-100 white-outline-btn btn-left">Active Play <i class="fa fa-chevron-right btn-chevron" aria-hidden="true"></i></button>
-                </a >
+        <!-----    Secondary Articles    ----->
+        
+        <div class="col-sm-4 col-md-4">
+            <a href="##" class="play-post">
+                <div class="col-sm-12 pad-l-r-0 post-img-content">
+                    <img src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-play-blog img-responsive" />
+                </div>
+                <div class="clearfix"></div>
+                <div class="content">
+                    <h1 class="play-title-h1 play-title-card">
+                         Get Organized for the New Year with the Fat Brain Toys Birthday Club
+                        Fat Brain Toys Birthday Club
+                    </h1>
+                         <p class="play-body-p play-feature-p play-card-p">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                        unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                    <div>
+                        <form class="" role="form" action="#" method="post">
+                   
+                    <div class=""><a href="##" class="btn btn-block btn-lg fbt-btn lt-grn-btn-fbt play-read-me-btn">Read More</a></div><!--5-->
+                </form>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-4 col-md-4">
+            <a href="##" class="play-post">
+                <div class="col-sm-12 pad-l-r-0 post-img-content">
+                    <img src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-play-blog img-responsive" />
+                </div>
+                <div class="clearfix"></div>
+                <div class="content">
+                    <h1 class="play-title-h1 play-title-card">
+                         Get Organized for the New Year with the Fat Brain Toys Birthday Club
+                        Fat Brain Toys Birthday Club
+                    </h1>
+                         <p class="play-body-p play-feature-p play-card-p">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                        unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                    <div>
+                        <form class="" role="form" action="#" method="post">
+                   
+                    <div class=""><a href="##" class="btn btn-block btn-lg fbt-btn lt-grn-btn-fbt play-read-me-btn">Read More</a></div><!--5-->
+                </form>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-4 col-md-4 play-card-container">
+            <a href="##" class="play-post">
+                <div class="col-sm-12 pad-l-r-0 post-img-content">
+                    <img src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-play-blog img-responsive" />
+                </div>
+                <div class="clearfix"></div>
+                <div class="content">
+                    <h1 class="play-title-h1 play-title-card">
+                         Get Organized for the 
+                    </h1>
+                         <p class="play-body-p play-feature-p play-card-p">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                        unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                    <div>
+                        <form class="" role="form" action="#" method="post">
+                   
+                    <div class=""><a href="##" class="btn btn-block btn-lg fbt-btn lt-grn-btn-fbt play-read-me-btn">Read More</a></div><!--5-->
+                </form>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+    
+    
+    
+    </div>
+</div>
+    
+<!-----  /Secondary Articles ----->
+    
+<!-- BEGIN PLAY FOOTER -->
+  <footer class="container-fluid play-footer-container">
+    <div class="row footer-row-play">
+        
+         <div class="col-xs-12 col-sm-6  col-md-3 col-md-push-9 col-md-offset-0 pad-l-r-0">              
+                <h2 class="col-sm-12 pad-l-r-0 play-h2" >Subscribe to the PLAY Toy Blog</h2>
+                
+                <form class="" role="form" action="#" method="post">
+                    <div class="col-sm-12 pad-l-r-0"><input type="email" id="fieldEmail" name="cm-xky-xky" class="form-control input-lg play-subscribe-form" placeholder="Enter Email Address" required=""></div><!--7-->
+                    <div class="col-sm-12 pad-l-r-0"><a href="##" class="btn btn-block btn-lg fbt-btn lt-grn-btn-fbt">Subscribe</a></div><!--5-->
+                </form>
+        </div>
+        
+        <div class=" col-sm-12 col-md-9 col-md-pull-3 pad-l-r-0">
+            <div class="col-sm-6 col-lg-8 pad-l-r-0">
+                <ul class="footer-play-nav">
+                    <li><a href="##">Archive</a></li>
+                    <li><a href="##">Press</a></li>
+                    <li><a href="##">Shop</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-lg-4 pad-l-r-0">
+                <ul class="list-group play-social">
+                    <h2 class="col-sm-12 play-h2" >Stay up to Date</h2>
+                    <li><a href="##"><i class="fa fa-facebook fa-2x"aria-hidden="true"></i></a></li>
+                    <li><a href="##"><i class="fa fa-pinterest fa-2x"aria-hidden="true"></i></a></li>
+                    <li><a href="##"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                    <li><a href="##"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                </ul> 
             </div>
         </div>
-<!--  /5050 section   -->
-        
+       
+      
+      
+      
+      </div>     
+</footer>
+<!-- /END PLAY FOOTER -->
             
 <!--  FOOTER   -->
    

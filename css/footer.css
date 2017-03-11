@@ -1,8 +1,5 @@
-/* subscribe */
 
-footer {
-    margin-top: 15px; 
-}
+/* subscribe */
 
 .container-subscribe {
     height: auto;
@@ -285,5 +282,17 @@ footer {
     .mcafee {
         padding-top: 20px;
     }
-    
+}
+
+/*----- Media Querie -----*/
+
+@media (min-width: 768px) {
+
+.footer-collapse.collapse {
+    display: block!important;
+    height: auto!important;
+    padding-bottom: 0;
+    overflow: visible!import
+}
+
 }
