@@ -88,12 +88,41 @@
 }
 
 .play-title-h1.play-feature-h1{
-     font-size: 2.7em;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+     overflow: hidden;
+    max-width: 940px;
+    max-height: 99px;
+    margin-top: 10px;
+    
+    font-size: 2.7em;
     line-height: 1.2em;
+    text-overflow: ellipsis;
+
+}
+
+.play-body-p.play-feature-p,
+.play-body-p.play-card-p {
+     display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+     overflow: hidden;
+    max-width: 940px;
+    height: 90px;
+    
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.4em;
+     text-overflow: ellipsis;
+   
+    color: #414042;
 }
 
 .play-card-container {
-     min-height: 488px;
+    height: auto;
+     max-height: 600px;
+    min-height: 490px;
 }
 
 .play-post {
@@ -146,7 +175,6 @@
     color: #58595b;
 }
 
-
 .play-body-p.play-card-p {
      display: -webkit-box;
     -webkit-line-clamp: 4;
@@ -169,6 +197,45 @@
 
 
 /*----- /PLAY HOMEPAGE BODY -----*/
+
+/*----- PLAY HOMEPAGE SOCIAL SECTION -----*/
+
+.play-social-container {
+    margin-top: 15px;
+}
+
+.play-social-left {
+    padding-right:25px;
+    padding-left:0px;
+}
+
+
+.play-social-right {
+    padding-right:0px;
+    padding-left:25px;
+}
+
+.social-wrapper {
+    margin-top: 70px;
+    padding: 40px 10px;
+    border: 1px solid #969899;
+}
+
+.social-sect-icon {
+    margin: -55px auto 10px;
+    width: 44px;
+    height: 44px;
+    
+}
+
+.social-sect-icon i {
+    padding-left: 12px;
+    padding-right: 10px;
+    background: #ffffff;
+    color: #969899;
+}
+
+/*----- /PLAY HOMEPAGE SOCIAL SECTION -----*/
 
 
 /*----- PLAY FOOTER -----*/
@@ -269,7 +336,48 @@
 /*----- MEDIA QUERIES -----*/
 
 
+@media (max-width: 1400px) {
+        .play-card-container {
+        min-height: 460px;
+    }
+}
 
+@media (min-width: 768px) and (max-width: 992px) {
+    .play-card-container {
+        min-height: 420px;
+    }
+}
+
+@media (max-width: 767px) {
+    .play-title-h1.play-feature-h1{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+     overflow: hidden;
+    max-width: 730px;
+    max-height: 99px;
+    margin-top: 10px;
+    
+     font-size: 2em;
+    font-weight: 600;
+    line-height: 1.2em;
+    text-overflow: ellipsis;
+    color: #3c6997;
+}
+    
+    .play-social-left {
+    padding-right:0px;
+}
+
+
+.play-social-right {
+    padding-left:0px;
+}
+
+.social-wrapper {
+    margin-top: 50px;
+}
+}
 
 
 
