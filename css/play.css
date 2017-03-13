@@ -10,6 +10,7 @@
     font-family: 'Roboto Slab', serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+.play-category,
 .play-body-p {
     font-family: 'Roboto', Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
@@ -73,9 +74,62 @@
 
 /*----- PLAY HOMEPAGE BODY -----*/
 
+.play-body-container {
+    margin-top: 20px;
+}
+
+
 .img-play-blog {
+    margin-bottom: 12px;
     width: 100%;
     height: auto;
+}
+
+.play-category-wrap {
+    display: inline-block;
+    margin-top: 8px;
+    margin-right: 4px;
+    
+    height: 30px;
+    width: 120px;
+        
+    font-size: .9em;
+    font-weight: 600;
+    text-transform: uppercase!important;
+}
+
+.play-category-btn {
+        line-height: 30px;
+        color: #ffffff; 
+}
+
+.play-parenting-btn {
+    background-color: #44af69;
+    border: 1px solid #44af69;
+}
+
+.play-education-btn {
+    background-color: #2b9eb3;
+    border: 1px solid #2b9eb3;
+}
+
+.play-special-btn {
+    background-color: #2dc4b6;
+    border: 1px solid #2dc4b6;
+}
+
+.play-activities-btn {
+    background-color: #efca06;
+    border: 1px solid #efca06;
+}
+
+.play-category-wrap:hover,
+.play-category-wrap:active,
+.play-category-wrap:focus {
+         background-color: #58595b;
+        border: 1px solid #ffffff;  
+        text-decoration: none!important;
+        color: #ffffff;     
 }
 
 .play-title-h1{
@@ -92,7 +146,7 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
      overflow: hidden;
-    max-width: 940px;
+    max-width: 1000px;
     max-height: 99px;
     margin-top: 10px;
     
@@ -105,24 +159,30 @@
 .play-body-p.play-feature-p,
 .play-body-p.play-card-p {
      display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
      overflow: hidden;
-    max-width: 940px;
-    height: 90px;
+    max-width: 1100px;
+     height: 75px;
     
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 300;
-    line-height: 1.4em;
+    line-height: 1.7em;
      text-overflow: ellipsis;
    
     color: #414042;
 }
 
+.feature-content-container {
+     height: auto;
+     max-height: 600px;
+    min-height: 300px;
+}
+
 .play-card-container {
     height: auto;
      max-height: 600px;
-    min-height: 490px;
+    min-height: 520px;
 }
 
 .play-post {
@@ -177,15 +237,15 @@
 
 .play-body-p.play-card-p {
      display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
      overflow: hidden;
     max-width: 730px;
-    height: 90px;
+    height: 75px;
     
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 300;
-    line-height: 1.4em;
+    line-height: 1.7em;
      text-overflow: ellipsis;
    
     color: #414042;
@@ -202,6 +262,7 @@
 
 .play-social-container {
     margin-top: 15px;
+    margin-bottom: 70px;
 }
 
 .play-social-left {
@@ -239,6 +300,10 @@
 
 
 /*----- PLAY FOOTER -----*/
+.play-footer-container {
+    border-top: 1px solid #e9e9e9;
+}
+
 .footer-row-play {
     padding: 50px;
 }
