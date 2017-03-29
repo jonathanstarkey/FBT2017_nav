@@ -39,7 +39,7 @@
 /*----- Left Filter Panel -----*/
 
 .left-filter-panel-container {
-    height: 100%; 
+/*    height: 100%; */
 /*    margin-bottom: 100%;*/
 }
             
@@ -107,7 +107,7 @@
 
 .filter-badge {
     font-size: .8em;
-    background: #f7333c;
+    background: #404041;
 }
 
  ::-webkit-scrollbar {
@@ -171,6 +171,7 @@
 .pagination>li>a, .pagination>li>span {
     position: relative;
     float: left;
+    height: 34px;
     padding: 6px 12px;
     line-height: 1.42857143;
     text-decoration: none;
@@ -275,7 +276,7 @@ select {
 /* ///Keeps Images Square*/
 
 .product-page-thumbnail {
-    min-height: 100%!important;
+/*    min-height: 100%!important;*/
     margin-bottom: 0px;
     padding: 10px;
     border: 0px;
@@ -412,14 +413,15 @@ select {
     }
     
     .left-filter-panel-container {
-        height: 100%; 
+/*        height: 100%; */
         margin-bottom: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     
     .product-page-thumbnail {
-        min-height: 100%!important;
+/*        min-height: 100%!important;*/
+        
     }
 }
 
@@ -444,7 +446,7 @@ select {
 }
 
 @media (max-width: 1031px){
-.navbar-form {
+.navbar-form-filter-fbt {
     width: auto;
     border: 0;
     margin-left: 0;

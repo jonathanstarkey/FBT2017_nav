@@ -1,0 +1,149 @@
+.navbar-default_fbt {
+    border: 0px;
+    border-radius: 0px;
+}
+
+
+
+.fbt-h1,
+.fbt-h3,
+.fbt-h4 {
+    font-family: 'Exo 2', sans-serif;
+}
+
+  { 
+    font-family: 'Roboto Slab', serif, Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.fbt-p,
+.navbar-nav_fbt li a,
+.list-group-fbt  {
+    font-family: 'Roboto', Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+
+.fbt-h1 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding:0 0 20px;
+ 
+     font-size: 2.7em;
+    font-weight: 600;
+    line-height: 1.2em;
+    color: #3c6996;
+}
+
+.fbt-h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+/*    padding:0px 0 20px;*/
+ 
+     font-size: 2em;
+    font-weight: 600;
+    line-height: 1.2em;
+    color: #414042;
+    
+}
+
+.fbt-h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding:0px 0 10px;
+ 
+     font-size: 1.7em;
+    font-weight: 600;
+    line-height: 1.2em;
+    color: #414042;
+    
+}
+
+.fbt-p {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.7em;
+    color: #414042;
+    
+}
+
+ .navbar-nav_fbt li a {
+     font-size: 1.1em;
+    font-weight: 600;
+    line-height: 1.5em;
+    color: #58595b!important;
+    }
+
+.about_award_wrap {
+    min-height: 170px;
+}
+
+
+.about_award_img {
+    height:auto;
+    min-height: 95px;
+    max-height: 180px;
+}
+
+.list-group-fbt .list-group-item {
+    border-radius: 0px!important;
+}
+
+.customer-talk-container-fbt {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid black;
+}
+
+.control-label_fbt {
+    margin-top: 5px;
+}
+
+@media (max-width: 1399px) {
+    .about_award_container {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    
+    .sidebar-nav-wrap-fbt {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .navbar-header_fbt {
+    height: 67px;
+    display: block;
+        
+/*    margin-top: 10px;*/
+    margin-right: 0px;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    width: 100%;
+    background-color: #aaa9ac;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;=
+    }
+    
+    .navbar-brand_fbt {
+        
+    height: 0px;
+        
+    font-weight: 600;
+    line-height: 52px;
+    text-align: left;
+    font-size: 1.2em;
+    color: #f1f1f1!important;
+    text-transform: uppercase;
+    }
+    
+    .navbar-nav_fbt {
+        margin: 0px!important;
+    }
+    
+    .navbar-nav_fbt li a {
+    }
+}
+
+
